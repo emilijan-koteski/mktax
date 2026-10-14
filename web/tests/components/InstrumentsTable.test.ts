@@ -15,5 +15,6 @@ describe('InstrumentsTable', () => {
     expect(boxes.map((b) => b.checked)).toEqual([false, true, false]);
     expect(screen.getByText('TEST_IE_ETF')).toBeInTheDocument();
     expect(screen.getAllByText(/претпоставено/).length).toBeGreaterThan(0);
+    expect(screen.getByRole('checkbox', { name: /TEST_IE_ETF/ })).toBeChecked();
   });
 });

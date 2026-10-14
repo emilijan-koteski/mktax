@@ -7,7 +7,7 @@ describe('i18n', () => {
     const paths = keyPaths(mk);
     expect(paths.length).toBeGreaterThan(50);
     for (const p of paths) {
-      const value = p.split('.').reduce<unknown>((o, k) => (o as Record<string, unknown>)[k], mk);
+      const value = p.split('.').reduce<unknown>((o, k) => (o as Record<string, unknown>)[k], mk as unknown);
       expect(typeof value, p).toBe('string');
       expect((value as string).trim().length, p).toBeGreaterThan(0);
       expect(value as string, p).not.toMatch(/TODO/);

@@ -17,6 +17,9 @@ describe('format', () => {
   it('keeps quantities exact up to eight decimals', () => {
     expect(norm(fmtQty('0.12345678'))).toBe('0,12345678');
     expect(norm(fmtQty('6'))).toBe('6');
+    expect(norm(fmtQty('1234.5'))).toBe('1.234,5');
+    expect(norm(fmtMkd('1234567.891'))).toBe('1.234.567,89 ден.');
+    expect(norm(fmtMkd('-0.00'))).toBe('0,00 ден.');
   });
 
   it('formats dates as dd.MM.yyyy and months in Macedonian', () => {

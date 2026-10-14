@@ -1,27 +1,40 @@
-const nf2 = new Intl.NumberFormat('mk-MK', { minimumFractionDigits: 2, maximumFractionDigits: 2 });
-const nfQty = new Intl.NumberFormat('mk-MK', { minimumFractionDigits: 0, maximumFractionDigits: 8 });
-const monthName = new Intl.DateTimeFormat('mk-MK', { month: 'long', timeZone: 'UTC' });
+import { m } from './i18n';
 
 export const collator = new Intl.Collator('mk');
 
-export const fmtMkd = (d: string): string => `${nf2.format(Number(d))}\u00a0ден.`;
+function group(int: string): string {
+  return int.replace(/\B(?=(\d{3})+(?!\d))/g, '.');
+}
 
-export const fmtAmount = (d: string, currency: string): string => `${nf2.format(Number(d))}\u00a0${currency}`;
+// Formats a decimal string in the Macedonian convention (thousands dot, decimal comma) without relying on the browser's ICU data for the mk locale.
+export function fmtNumber(d: string, minFraction = 2, maxFraction = 2): string {
+  const s = d.trim();
+  if (s === '' || !/^-?\d+(\.\d+)?$/.test(s)) return s;
+  const negative = s.startsWith('-');
+  const [int, frac = ''] = s.replace('-', '').split('.');
+  let fraction = frac.slice(0, maxFraction).replace(/0+$/, '');
+  if (maxFraction === minFraction) fraction = frac.slice(0, maxFraction).padEnd(maxFraction, '0');
+  else if (fraction.length < minFraction) fraction = fraction.padEnd(minFraction, '0');
+  const body = fraction ? `${group(int)},${fraction}` : group(int);
+  return negative && !/^[0.,]*$/.test(body) ? `-${body}` : body;
+}
 
-export const fmtQty = (d: string): string => nfQty.format(Number(d));
+export const fmtMkd = (d: string): string => `${fmtNumber(d)}\u00a0ден.`;
 
-export const fmtNumber = (d: string): string => nf2.format(Number(d));
+export const fmtAmount = (d: string, currency: string): string => `${fmtNumber(d)}\u00a0${currency}`;
+
+export const fmtQty = (d: string): string => fmtNumber(d, 0, 8);
 
 export function fmtDate(iso: string): string {
   if (!iso) return '';
-  const [y, m, d] = iso.split('-');
-  return `${d}.${m}.${y}`;
+  const [y, mo, d] = iso.split('-');
+  return `${d}.${mo}.${y}`;
 }
 
 export function fmtMonth(ym: string): string {
   if (!ym) return '';
-  const [y, m] = ym.split('-').map(Number);
-  return `${monthName.format(new Date(Date.UTC(y, m - 1, 1)))} ${y}`;
+  const [y, mo] = ym.split('-').map(Number);
+  return `${m.months[mo - 1]} ${y}`;
 }
 
 export function fmtDateTime(iso: string): string {

@@ -25,7 +25,7 @@
           <td class="num">{ins.buys} / {ins.sells}</td>
           <td>
             <label class="inline-flex items-center gap-2">
-              <input type="checkbox" bind:checked={fundUnits[ins.key]} />
+              <input type="checkbox" aria-label="{m.instruments.fundUnits}: {ins.ticker}" bind:checked={fundUnits[ins.key]} />
               {#if ins.fund_units_guessed}<span class="text-xs text-muted">{m.instruments.guessed}</span>{/if}
             </label>
           </td>
