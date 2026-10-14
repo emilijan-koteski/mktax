@@ -7,16 +7,16 @@
   let { sale, index }: { sale: Sale; index: number } = $props();
 </script>
 
-<section class="mt-3">
+<section class="space-y-2">
   <h4 class="text-sm font-semibold">
     {index}. {t(m.lots.saleTotal, { quantity: fmtQty(sale.quantity), ticker: sale.ticker, proceeds: fmtAmount(sale.proceeds, sale.currency), rate: sale.sale_rate })}
   </h4>
   {#if !sale.cost_complete}
-    <div class="mt-1"><Callout kind="warn">{m.lots.costIncomplete}</Callout></div>
+    <Callout kind="warn">{m.lots.costIncomplete}</Callout>
   {/if}
-  <p class="mb-1 text-xs text-muted">{m.lots.title}</p>
-  <div class="overflow-x-auto">
-    <table class="ledger">
+  <p class="text-xs font-medium text-ink-muted">{m.lots.title}</p>
+  <div class="table-wrap">
+    <table class="ledger ledger-stack">
       <thead>
         <tr>
           <th scope="col">{m.lots.acquired}</th>
@@ -32,22 +32,22 @@
       </thead>
       <tbody>
         {#each sale.lots as lot, i (i)}
-          <tr class={lot.status === 'taxable' ? '' : 'text-muted'}>
-            <td>{fmtDate(lot.acquired)}</td>
-            <td class="num">{fmtQty(lot.quantity)}</td>
-            <td class="num">{lot.status === 'unknown_cost' ? '?' : fmtAmount(lot.cost, lot.currency)}</td>
-            <td class="num">{fmtAmount(lot.proceeds, sale.currency)}</td>
-            <td class="num">{lot.acquisition_rate}</td>
-            <td class="num">{lot.status === 'unknown_cost' ? '' : fmtMkd(lot.gain_mkd)}</td>
-            <td class="num">{lot.status === 'unknown_cost' ? '' : fmtMkd(lot.gain_mkd_b)}</td>
-            <td>{m.lots.statuses[lot.status]}</td>
-            <td>{fmtDate(lot.tax_free_from)}</td>
+          <tr class:is-muted={lot.status !== 'taxable'}>
+            <td class="cell-head tabular-nums">{fmtDate(lot.acquired)}</td>
+            <td data-label={m.lots.quantity} class="num">{fmtQty(lot.quantity)}</td>
+            <td data-label={m.lots.cost} class="num">{lot.status === 'unknown_cost' ? '?' : fmtAmount(lot.cost, lot.currency)}</td>
+            <td data-label={m.lots.proceeds} class="num">{fmtAmount(lot.proceeds, sale.currency)}</td>
+            <td data-label={m.lots.acquisitionRate} class="num">{lot.acquisition_rate}</td>
+            <td data-label={m.lots.gainA} class="num">{lot.status === 'unknown_cost' ? '' : fmtMkd(lot.gain_mkd)}</td>
+            <td data-label={m.lots.gainB} class="num">{lot.status === 'unknown_cost' ? '' : fmtMkd(lot.gain_mkd_b)}</td>
+            <td data-label={m.lots.status}>{m.lots.statuses[lot.status]}</td>
+            <td data-label={m.lots.taxFreeFrom} class="tabular-nums">{fmtDate(lot.tax_free_from)}</td>
           </tr>
         {/each}
       </tbody>
     </table>
   </div>
-  <p class="mt-1 text-xs text-muted">
+  <p class="text-xs text-ink-muted">
     {m.lots.saleRate}: {sale.sale_rate};
     {m.totals.taxableGains}: {fmtMkd(sale.taxable_gain_mkd)};
     {m.lots.gainB}: {fmtMkd(sale.taxable_gain_mkd_b)};

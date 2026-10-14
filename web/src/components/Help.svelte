@@ -1,13 +1,15 @@
 <script lang="ts">
+  import ChevronDown from '@lucide/svelte/icons/chevron-down';
+  import CircleHelp from '@lucide/svelte/icons/circle-help';
   import { m } from '../lib/i18n';
 </script>
 
-<details class="no-print" id="help">
-  <summary class="cursor-pointer font-medium">{m.help.title}</summary>
-  <ol class="mt-2 max-w-prose list-decimal space-y-1 pl-5 text-sm">
+<details class="disclosure card no-print scroll-mt-24" id="help">
+  <summary class="w-full text-ink"><CircleHelp class="text-link" /><span class="flex-1">{m.help.title}</span><ChevronDown /></summary>
+  <ol class="mt-4 max-w-prose list-decimal space-y-2 pl-5 text-sm marker:font-semibold marker:text-link">
     {#each Object.values(m.help.steps) as step (step)}
-      <li>{step}</li>
+      <li class="pl-1">{step}</li>
     {/each}
   </ol>
-  <p class="mt-2 max-w-prose text-sm text-muted">{m.print.howTo}</p>
+  <p class="mt-4 max-w-prose text-caption text-ink-muted">{m.print.howTo}</p>
 </details>

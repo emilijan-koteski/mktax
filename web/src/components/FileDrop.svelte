@@ -1,4 +1,7 @@
 <script lang="ts">
+  import Info from '@lucide/svelte/icons/info';
+  import Lock from '@lucide/svelte/icons/lock';
+  import Upload from '@lucide/svelte/icons/upload';
   import { m } from '../lib/i18n';
 
   let { onfiles, busy = false }: { onfiles: (files: File[]) => void; busy?: boolean } = $props();
@@ -22,7 +25,8 @@
   data-testid="dropzone"
   role="group"
   aria-label={m.steps.files}
-  class="rounded-xs border-2 border-dashed px-6 py-8 text-center {over ? 'border-accent bg-accent-soft' : 'border-line bg-sheet'}"
+  class="dropzone"
+  data-over={over || undefined}
   ondragover={(e) => {
     e.preventDefault();
     over = true;
@@ -30,12 +34,14 @@
   ondragleave={() => (over = false)}
   ondrop={drop}
 >
-  <p class="text-base">
-    {m.files.dropHint}
-    <label for="csv-input" class="cursor-pointer font-medium text-accent underline">{m.files.choose}</label>
-  </p>
+  <span class="dropzone-icon"><Upload /></span>
+  <p class="max-w-md text-base font-medium">{m.files.dropHint}</p>
   <input id="csv-input" class="visually-hidden" type="file" multiple accept=".csv,text/csv" onchange={pick} disabled={busy} />
-  <p class="mx-auto mt-3 max-w-prose text-sm text-muted">{m.files.oneFilePerYear}</p>
-  <p class="mx-auto mt-1 max-w-prose text-sm text-muted">{m.files.howToExport}</p>
-  <p class="mt-3 text-sm font-medium text-ok">{m.files.neverLeaves}</p>
+  <label for="csv-input" class="btn btn-primary" class:opacity-50={busy}>{m.files.choose}</label>
+  <p class="text-caption font-medium text-success"><Lock class="mr-1.5 inline size-4 align-[-3px]" />{m.files.neverLeaves}</p>
 </div>
+
+<ul class="mt-4 space-y-2 text-caption text-ink-muted">
+  <li class="flex gap-2"><Info class="mt-0.5 size-4 shrink-0 text-link" /><span>{m.files.oneFilePerYear}</span></li>
+  <li class="flex gap-2"><Info class="mt-0.5 size-4 shrink-0 text-link" /><span>{m.files.howToExport}</span></li>
+</ul>

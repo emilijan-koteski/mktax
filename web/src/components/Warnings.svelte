@@ -1,4 +1,5 @@
 <script lang="ts">
+  import ChevronDown from '@lucide/svelte/icons/chevron-down';
   import { m } from '../lib/i18n';
   import type { Warning } from '../lib/types';
   import { warningText } from '../lib/warnings';
@@ -9,15 +10,17 @@
 
 {#if warnings.length || raw.length}
   <Callout kind="warn">
-    <ul class="list-disc space-y-1 pl-5">
-      {#each warnings as w, i (i)}
-        <li>{warningText(w)}</li>
-      {/each}
-    </ul>
+    {#if warnings.length}
+      <ul class="list-disc space-y-1 pl-4">
+        {#each warnings as w, i (i)}
+          <li>{warningText(w)}</li>
+        {/each}
+      </ul>
+    {/if}
     {#if raw.length}
-      <details class="mt-1 text-xs text-muted">
-        <summary class="cursor-pointer">{m.common.technical}</summary>
-        <ul class="list-disc pl-5">
+      <details class="disclosure mt-2 text-xs">
+        <summary>{m.common.technical}<ChevronDown /></summary>
+        <ul class="mt-1 list-disc pl-4 text-ink-muted">
           {#each raw as line, i (i)}<li>{line}</li>{/each}
         </ul>
       </details>

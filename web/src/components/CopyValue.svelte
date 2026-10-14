@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Check from '@lucide/svelte/icons/check';
+  import Copy from '@lucide/svelte/icons/copy';
   import { m, t } from '../lib/i18n';
 
   let { value, display = value }: { value: string; display?: string } = $props();
@@ -15,14 +17,16 @@
   }
 </script>
 
-<span class="inline-flex items-center gap-1">
-  <span class="num font-medium">{display}</span>
+<span class="copy">
+  <span class="copy-value">{display}</span>
   <button
     type="button"
-    class="no-print rounded-xs border border-line px-1 text-xs text-muted hover:border-accent hover:text-accent"
+    class="btn btn-ghost btn-icon no-print"
+    data-copied={copied || undefined}
     aria-label={t(m.portal.copy, { value })}
+    title={copied ? m.portal.copied : t(m.portal.copy, { value })}
     onclick={copy}
   >
-    {copied ? m.portal.copied : '⧉'}
+    {#if copied}<Check />{:else}<Copy />{/if}
   </button>
 </span>

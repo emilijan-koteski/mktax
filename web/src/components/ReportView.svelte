@@ -1,4 +1,6 @@
 <script lang="ts">
+  import Download from '@lucide/svelte/icons/download';
+  import Printer from '@lucide/svelte/icons/printer';
   import { downloadText, portalRowsCsv } from '../lib/export/csv';
   import { fmtMonth } from '../lib/format';
   import { m, t } from '../lib/i18n';
@@ -41,30 +43,30 @@
   }
 </script>
 
-<div>
-  <div class="no-print flex flex-wrap items-center gap-2">
-    <button type="button" class="btn" onclick={() => printTables(printTitle)}>{m.ledger.button}</button>
-    <button type="button" class="btn btn-secondary" onclick={exportCsv}>{m.csv.download}</button>
+<div class="space-y-4">
+  <div class="no-print grid gap-2 sm:flex sm:flex-wrap">
+    <button type="button" class="btn btn-primary" onclick={() => printTables(printTitle)}><Printer />{m.ledger.button}</button>
+    <button type="button" class="btn btn-secondary" onclick={exportCsv}><Download />{m.csv.download}</button>
   </div>
 
   {#if tables}<LedgerReport {report} {generatedAt} />{/if}
 
-  <div class:no-print={tables}>
+  <div class="space-y-4" class:no-print={tables}>
     <PrintHeader {report} {generatedAt} />
 
-    <div class="mt-3"><Warnings warnings={report.warnings} raw={report.raw_warnings} /></div>
+    <Warnings warnings={report.warnings} raw={report.raw_warnings} />
 
     {#each groups as g (g.kind === 'empty' ? `${g.from}-${g.to}` : g.month.month)}
       {#if g.kind === 'month'}
         <MonthCard month={g.month} printMode={app.printMode} />
       {:else if g.kind === 'current'}
-        <p class="mt-6 flex flex-wrap items-baseline gap-x-3 border-t border-line pt-2 text-sm">
-          <span class="font-display text-lg">{fmtMonth(g.month.month)}</span>
-          <span class="badge badge-live">{m.month.status.inProgress}</span>
-          <span class="text-muted">{m.month.nothingToFile}</span>
+        <p class="flex flex-wrap items-center gap-x-3 gap-y-1 rounded-md border border-line bg-surface px-4 py-3 text-sm">
+          <span class="first-upper font-semibold">{fmtMonth(g.month.month)}</span>
+          <span class="badge badge-brand">{m.month.status.inProgress}</span>
+          <span class="text-ink-muted">{m.month.nothingToFile}</span>
         </p>
       {:else}
-        <p class="mt-6 border-t border-line pt-2 text-sm text-muted">
+        <p class="rounded-md border border-dashed border-line px-4 py-3 text-sm text-ink-muted">
           {g.from === g.to ? `${fmtMonth(g.from)}: ${m.month.nothingToFile}` : t(m.month.emptyRange, { from: fmtMonth(g.from), to: fmtMonth(g.to) })}
         </p>
       {/if}

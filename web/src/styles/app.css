@@ -1,43 +1,91 @@
 @import "tailwindcss";
+@import "@fontsource-variable/onest";
+@import "./tokens.css";
+@import "./components.css";
 
-@theme {
-  --color-paper: #f4f6f8;
-  --color-sheet: #ffffff;
-  --color-ink: #10223a;
-  --color-muted: #5b6b7c;
-  --color-line: #d5dbe3;
-  --color-accent: #0b5f8a;
-  --color-accent-soft: #e3eef5;
-  --color-stamp: #b3261e;
-  --color-stamp-soft: #fbe9e7;
-  --color-amber: #8a5a00;
-  --color-amber-soft: #fff4d6;
-  --color-ok: #1b6e4b;
-  --font-display: Georgia, "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
-  --font-sans: system-ui, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+@theme static {
+  --font-*: initial;
+  --font-sans: "Onest Variable", "Onest", system-ui, "Segoe UI", "Noto Sans", sans-serif;
+
+  --radius-*: initial;
+  --radius-sm: 6px;
+  --radius-md: 10px;
+  --radius-lg: 16px;
+  --radius-full: 9999px;
+
+  --shadow-*: initial;
+  --inset-shadow-*: initial;
+  --drop-shadow-*: initial;
+
+  --text-*: initial;
+  --text-xs: 0.75rem;
+  --text-xs--line-height: 1rem;
+  --text-caption: 0.8125rem;
+  --text-caption--line-height: 1.25rem;
+  --text-sm: 0.875rem;
+  --text-sm--line-height: 1.375rem;
+  --text-base: 0.9375rem;
+  --text-base--line-height: 1.5rem;
+  --text-lg: 1.125rem;
+  --text-lg--line-height: 1.625rem;
+  --text-xl: 1.25rem;
+  --text-xl--line-height: 1.75rem;
+  --text-2xl: 1.375rem;
+  --text-2xl--line-height: 1.75rem;
+}
+
+@theme inline {
+  --color-*: initial;
+  --color-page: var(--page);
+  --color-surface: var(--surface);
+  --color-surface-muted: var(--surface-muted);
+  --color-line: var(--line);
+  --color-line-strong: var(--line-strong);
+  --color-ink: var(--ink);
+  --color-ink-muted: var(--ink-muted);
+  --color-brand: var(--brand);
+  --color-on-brand: var(--on-brand);
+  --color-brand-soft: var(--brand-soft);
+  --color-link: var(--link);
+  --color-green: var(--green);
+  --color-accent: var(--accent);
+  --color-accent-ink: var(--accent-ink);
+  --color-accent-soft: var(--accent-soft);
+  --color-success: var(--success);
+  --color-success-soft: var(--success-soft);
+  --color-warning: var(--warning);
+  --color-warning-soft: var(--warning-soft);
+  --color-danger: var(--danger);
+  --color-danger-soft: var(--danger-soft);
 }
 
 @layer base {
   html {
-    background: var(--color-paper);
-    color: var(--color-ink);
+    background: var(--page);
+    color: var(--ink);
     font-family: var(--font-sans);
-    font-size: 15px;
+    font-size: 16px;
     line-height: 1.5;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+    text-rendering: optimizeLegibility;
   }
   body {
     margin: 0;
+    font-size: var(--text-base);
+    line-height: var(--text-base--line-height);
   }
   h1,
   h2,
-  h3 {
-    font-family: var(--font-display);
-    font-weight: 600;
+  h3,
+  h4 {
+    font-weight: 650;
     letter-spacing: -0.01em;
-    line-height: 1.2;
+    text-wrap: balance;
   }
-  table {
-    border-collapse: collapse;
+  a {
+    color: var(--link);
+    text-underline-offset: 2px;
   }
   .num {
     font-variant-numeric: tabular-nums;
@@ -45,8 +93,12 @@
     white-space: nowrap;
   }
   :focus-visible {
-    outline: 2px solid var(--color-accent);
+    outline: 2px solid var(--focus);
     outline-offset: 2px;
+  }
+  ::selection {
+    background: var(--brand-soft);
+    color: var(--ink);
   }
   @media (prefers-reduced-motion: reduce) {
     *,
@@ -59,60 +111,20 @@
 }
 
 @layer components {
-  .btn {
-    @apply inline-flex cursor-pointer items-center gap-2 rounded-xs border border-ink bg-ink px-3 py-1.5 text-sm font-medium text-white hover:border-accent hover:bg-accent disabled:cursor-not-allowed disabled:opacity-50;
-  }
-  .btn-secondary {
-    @apply border-line bg-sheet text-ink hover:border-accent hover:bg-accent-soft hover:text-ink;
-  }
-  .ledger {
-    @apply w-full text-sm;
-  }
-  .ledger th {
-    @apply border-b-2 border-ink py-1.5 pr-3 text-left align-bottom font-medium text-muted;
-  }
-  .ledger td {
-    @apply border-b border-line py-1.5 pr-3 align-top;
-  }
-  .ledger tbody th {
-    @apply border-b border-line py-1.5 pr-3 text-left align-top font-semibold text-ink;
-  }
-  .ledger tr:last-child td,
-  .ledger tr:last-child th {
-    @apply border-b-0;
-  }
-  .sheet {
-    @apply border-t-4 border-ink bg-sheet px-4 py-4;
-  }
-  .stamp {
-    @apply inline-block rounded-xs border-2 border-stamp px-2 py-0.5 text-xs font-bold tracking-wide text-stamp;
-    transform: rotate(-3deg);
-  }
-  .badge {
-    @apply inline-block rounded-xs border border-line px-2 py-0.5 text-xs font-medium text-muted;
-  }
-  .badge-live {
-    @apply border-accent bg-accent-soft text-accent;
-  }
-  .callout {
-    @apply border-l-4 px-3 py-2 text-sm;
-  }
-  .callout-warn {
-    @apply border-amber bg-amber-soft;
-  }
-  .callout-error {
-    @apply border-stamp bg-stamp-soft;
-  }
-  .callout-info {
-    @apply border-accent bg-accent-soft;
-  }
   .visually-hidden {
-    @apply absolute h-px w-px overflow-hidden whitespace-nowrap;
+    position: absolute;
+    width: 1px;
+    height: 1px;
+    overflow: hidden;
+    white-space: nowrap;
     clip: rect(0 0 0 0);
     clip-path: inset(50%);
   }
   .print-only {
     display: none;
+  }
+  .first-upper::first-letter {
+    text-transform: uppercase;
   }
 }
 
@@ -138,12 +150,12 @@
   }
   .grid-table th,
   .grid-table td {
-    @apply border border-muted px-1 py-0.5 align-top;
+    @apply border border-ink-muted px-1 py-0.5 align-top;
   }
   .grid-table thead th,
   .grid-table tfoot th,
   .grid-table tfoot td {
-    @apply bg-paper font-semibold;
+    @apply bg-surface-muted font-semibold;
     print-color-adjust: exact;
   }
   .grid-table thead th {
@@ -157,7 +169,7 @@
     @apply text-left;
   }
   .grid-table .isin {
-    @apply block text-muted;
+    @apply block text-ink-muted;
     font-size: 6pt;
   }
   .grid-table tbody.sale {

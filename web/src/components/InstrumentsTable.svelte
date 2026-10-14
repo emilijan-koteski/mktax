@@ -5,8 +5,8 @@
   let { instruments, fundUnits = $bindable() }: { instruments: Instrument[]; fundUnits: Record<string, boolean> } = $props();
 </script>
 
-<div class="overflow-x-auto">
-  <table class="ledger">
+<div class="table-wrap">
+  <table class="ledger ledger-stack">
     <thead>
       <tr>
         <th scope="col">{m.instruments.ticker}</th>
@@ -19,14 +19,14 @@
     <tbody>
       {#each instruments as ins (ins.key)}
         <tr>
-          <th scope="row">{ins.ticker}</th>
-          <td>{ins.name}</td>
-          <td class="text-muted">{ins.isin}</td>
-          <td class="num">{ins.buys} / {ins.sells}</td>
-          <td>
+          <th scope="row" class="cell-head">{ins.ticker}</th>
+          <td data-label={m.instruments.name}>{ins.name}</td>
+          <td data-label={m.instruments.isin} class="text-ink-muted tabular-nums">{ins.isin}</td>
+          <td data-label={m.instruments.trades} class="num">{ins.buys} / {ins.sells}</td>
+          <td data-label={m.instruments.fundUnits}>
             <label class="inline-flex items-center gap-2">
-              <input type="checkbox" aria-label="{m.instruments.fundUnits}: {ins.ticker}" bind:checked={fundUnits[ins.key]} />
-              {#if ins.fund_units_guessed}<span class="text-xs text-muted">{m.instruments.guessed}</span>{/if}
+              <input type="checkbox" class="checkbox" aria-label="{m.instruments.fundUnits}: {ins.ticker}" bind:checked={fundUnits[ins.key]} />
+              {#if ins.fund_units_guessed}<span class="text-xs text-ink-muted">{m.instruments.guessed}</span>{/if}
             </label>
           </td>
         </tr>

@@ -6,14 +6,16 @@
   let { positions, asOf }: { positions: OpenPosition[]; asOf: string } = $props();
 </script>
 
-<section class="sheet mt-6" aria-labelledby="h-open-lots">
-  <h3 id="h-open-lots" class="text-xl">{m.openLots.title}</h3>
-  <p class="text-sm text-muted">{t(m.openLots.asOf, { date: fmtDate(asOf) })}</p>
+<section class="card sheet space-y-4" aria-labelledby="h-open-lots">
+  <header>
+    <h3 id="h-open-lots" class="card-title">{m.openLots.title}</h3>
+    <p class="text-caption text-ink-muted">{t(m.openLots.asOf, { date: fmtDate(asOf) })}</p>
+  </header>
   {#if positions.length === 0}
-    <p class="mt-2 text-sm">{m.openLots.none}</p>
+    <p class="text-sm">{m.openLots.none}</p>
   {:else}
-    <div class="mt-2 overflow-x-auto">
-      <table class="ledger">
+    <div class="table-wrap">
+      <table class="ledger ledger-stack">
         <thead>
           <tr>
             <th scope="col">{m.portal.instrument}</th>
@@ -27,20 +29,20 @@
         <tbody>
           {#each positions as p (p.key)}
             <tr>
-              <th scope="row">{p.ticker} <span class="block text-xs font-normal text-muted">{p.name}</span></th>
-              <td class="num">{fmtQty(p.quantity)}</td>
-              <td class="num">{fmtAmount(p.cost, p.currency)}</td>
-              <td>{fmtDate(p.earliest_acquired)}</td>
-              <td>{fmtDate(p.oldest_lot_tax_free_from)}</td>
-              <td class="num">{fmtQty(p.tax_free_quantity_now)}</td>
+              <th scope="row" class="cell-head">{p.ticker} <span class="sub">{p.name}</span></th>
+              <td data-label={m.openLots.quantity} class="num">{fmtQty(p.quantity)}</td>
+              <td data-label={m.openLots.cost} class="num">{fmtAmount(p.cost, p.currency)}</td>
+              <td data-label={m.openLots.earliest} class="tabular-nums">{fmtDate(p.earliest_acquired)}</td>
+              <td data-label={m.openLots.taxFreeFrom} class="tabular-nums">{fmtDate(p.oldest_lot_tax_free_from)}</td>
+              <td data-label={m.openLots.taxFreeNow} class="num">{fmtQty(p.tax_free_quantity_now)}</td>
             </tr>
             {#each p.lots as lot, i (i)}
-              <tr class="text-xs text-muted">
-                <td class="pl-4">{fmtDate(lot.acquired)}</td>
-                <td class="num">{fmtQty(lot.quantity)}</td>
-                <td class="num">{fmtAmount(lot.cost, p.currency)}</td>
+              <tr class="is-child">
+                <td data-label={m.lots.acquired} class="tabular-nums">{fmtDate(lot.acquired)}</td>
+                <td data-label={m.openLots.quantity} class="num">{fmtQty(lot.quantity)}</td>
+                <td data-label={m.openLots.cost} class="num">{fmtAmount(lot.cost, p.currency)}</td>
                 <td></td>
-                <td>{fmtDate(lot.tax_free_from)}</td>
+                <td data-label={m.openLots.taxFreeFrom} class="tabular-nums">{fmtDate(lot.tax_free_from)}</td>
                 <td></td>
               </tr>
             {/each}

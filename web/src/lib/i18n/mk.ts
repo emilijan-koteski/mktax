@@ -3,6 +3,7 @@ export const mk = {
   app: {
     title: 'Даночко',
     subtitle: 'данок од Trading 212 за е-ППД',
+    lead: 'Пресметува што треба да внесете во месечната е-⁠ППД пресметка од CSV извозот на Trading 212.',
     help: 'Помош',
     privacy: 'Приватност',
     version: 'верзија {version}',
@@ -17,6 +18,7 @@ export const mk = {
     error: 'Се појави грешка.',
   },
   steps: {
+    label: 'Чекори',
     files: 'Датотеки',
     review: 'Преглед и поставки',
     report: 'Извештај',

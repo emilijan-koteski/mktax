@@ -7,9 +7,9 @@
   let { rows }: { rows: PortalRow[] } = $props();
 </script>
 
-<div class="overflow-x-auto">
-  <table class="ledger">
-    <caption class="pb-1 text-left text-sm font-medium">{m.month.enterInPortal}</caption>
+<h4 class="mb-2 text-sm font-semibold">{m.month.enterInPortal}</h4>
+<div class="table-wrap">
+  <table class="ledger ledger-stack">
     <thead>
       <tr>
         <th scope="col">{m.portal.n}</th>
@@ -26,33 +26,33 @@
     </thead>
     <tbody>
       {#each rows as r (r.n)}
-        <tr class={r.enter ? '' : 'text-muted'}>
-          <th scope="row">{r.n}</th>
-          <td>
+        <tr class:is-muted={!r.enter}>
+          <th scope="row" class="cell-head tabular-nums text-ink-muted">{r.n}</th>
+          <td class="cell-head font-medium">
             {r.ticker}
-            <span class="block text-xs text-muted">{r.kind === 'sale' ? m.portal.sale : m.portal.dividend}</span>
+            <span class="sub">{r.kind === 'sale' ? m.portal.sale : m.portal.dividend}</span>
           </td>
-          <td>{r.income_type}</td>
-          <td>{r.income_subtype}</td>
-          <td>{r.country.name_mk}</td>
-          <td>{r.currency}</td>
-          <td class="num">
+          <td data-label={m.portal.incomeType}>{r.income_type}</td>
+          <td data-label={m.portal.incomeSubtype}>{r.income_subtype}</td>
+          <td data-label={m.portal.country}>{r.country.name_mk}</td>
+          <td data-label={m.portal.currency}>{r.currency}</td>
+          <td data-label={m.portal.gross} class="num">
             {#if r.enter}
               <CopyValue value={r.gross} />
             {:else}
               <span>{r.gross}</span>
-              <span class="block text-xs">{r.skip_reason ? m.portal.skip[r.skip_reason] : ''}</span>
+              <span class="sub">{r.skip_reason ? m.portal.skip[r.skip_reason] : ''}</span>
             {/if}
           </td>
-          <td class="num">
+          <td data-label={m.portal.foreignTax} class="num">
             {#if r.enter && r.kind === 'dividend'}
               <CopyValue value={r.foreign_tax} />
             {:else}
               {r.foreign_tax}
             {/if}
           </td>
-          <td>{fmtDate(r.date)}</td>
-          <td class="num">{fmtMkd(r.tax_mkd)}</td>
+          <td data-label={m.portal.date} class="tabular-nums">{fmtDate(r.date)}</td>
+          <td data-label={m.csv.headers.taxMkd} class="num">{fmtMkd(r.tax_mkd)}</td>
         </tr>
       {/each}
     </tbody>
