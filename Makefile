@@ -40,7 +40,7 @@ test:
 	pnpm -C web test
 
 test-wasm:
-	PATH="$(GOROOT)/lib/wasm:$$PATH" GOOS=js GOARCH=wasm $(GO) test $(WASM_PKGS)
+	GOOS=js GOARCH=wasm $(GO) test -exec "$(GOROOT)/lib/wasm/go_js_wasm_exec" $(WASM_PKGS)
 
 golden:
 	$(GO) test ./internal/bridge -run TestCalculateGolden -update
