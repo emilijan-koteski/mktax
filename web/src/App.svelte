@@ -143,15 +143,15 @@
       <Help />
       <Privacy />
     </div>
-    <div class="space-y-1.5 text-center text-xs text-ink-muted">
-      <p class="flex items-center justify-center gap-2">
-        <img src={logo} alt="" width="20" height="20" class="size-5" />{m.app.title} · {t(m.app.version, { version })}
-      </p>
-      <p>{m.footer.madeBy} <a href="mailto:emilijankoteski@pm.me" title="emilijankoteski@pm.me">Emilijan Koteski</a></p>
-      <p>
-        {m.footer.hobby} <a href="https://buymeacoffee.com/emilijan" target="_blank" rel="noopener noreferrer">{m.footer.coffee}</a>.
+    <p class="flex flex-col items-center gap-1.5 text-center text-xs text-ink-muted sm:flex-row sm:justify-center sm:gap-2">
+      <span>{m.app.title} · {t(m.app.version, { version })}</span>
+      <span aria-hidden="true" class="hidden sm:inline">·</span>
+      <a href="mailto:emilijankoteski@pm.me" title="emilijankoteski@pm.me">Emilijan Koteski</a>
+      <span aria-hidden="true" class="hidden sm:inline">·</span>
+      <span>
+        <a href="https://buymeacoffee.com/emilijan" target="_blank" rel="noopener noreferrer">{m.footer.coffee}</a>
         <img src={coffee} alt="" aria-hidden="true" width="18" height="18" class="inline-block size-[1.35em] align-[-0.3em]" />
-      </p>
-    </div>
+      </span>
+    </p>
   </footer>
 </div>
