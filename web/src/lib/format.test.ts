@@ -1,5 +1,5 @@
 import { describe, expect, it } from 'vitest';
-import { collator, fmtAmount, fmtDate, fmtDateTime, fmtMkd, fmtMonth, fmtQty, isNegative } from './format';
+import { collator, fmtAmount, fmtDate, fmtDateTime, fmtMkd, fmtMonth, fmtQty, isNegative, sumDecimals } from './format';
 
 const norm = (s: string) => s.replace(/[\u00a0\u202f]/g, ' ');
 
@@ -37,5 +37,12 @@ describe('format', () => {
   it('detects negative decimals without converting to numbers', () => {
     expect(isNegative('-0.01')).toBe(true);
     expect(isNegative('0.00')).toBe(false);
+  });
+
+  it('sums decimal strings exactly at the widest scale', () => {
+    expect(sumDecimals(['0.10', '0.20'])).toBe('0.30');
+    expect(sumDecimals(['1.5', '-2.25'])).toBe('-0.75');
+    expect(sumDecimals(['1234.567', '0.003'])).toBe('1234.570');
+    expect(sumDecimals([])).toBe('0.00');
   });
 });

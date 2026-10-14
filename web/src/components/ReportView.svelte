@@ -6,6 +6,7 @@
   import { app } from '../lib/state.svelte';
   import type { CalculateResult, Month } from '../lib/types';
   import ExcludedRows from './ExcludedRows.svelte';
+  import LedgerReport from './LedgerReport.svelte';
   import MonthCard from './MonthCard.svelte';
   import Notes from './Notes.svelte';
   import OpenLots from './OpenLots.svelte';
@@ -31,6 +32,8 @@
     return out;
   });
 
+  const printTitle = $derived(`${m.app.title} ${report.from} ${report.to}`);
+  const tables = $derived(app.printMode && app.printLayout === 'tables');
   const csvName = $derived(t(m.csv.filename, { from: report.from, to: report.to }));
 
   function exportCsv() {
@@ -40,31 +43,36 @@
 
 <div>
   <div class="no-print flex flex-wrap items-center gap-2">
-    <button type="button" class="btn" onclick={() => printReport(`${m.app.title} ${report.from} ${report.to}`)}>{m.print.button}</button>
+    <button type="button" class="btn" onclick={() => printReport(printTitle, 'tables')}>{m.ledger.button}</button>
+    <button type="button" class="btn btn-secondary" onclick={() => printReport(printTitle)}>{m.print.button}</button>
     <button type="button" class="btn btn-secondary" onclick={exportCsv}>{m.csv.download}</button>
   </div>
 
-  <PrintHeader {report} {generatedAt} />
+  {#if tables}<LedgerReport {report} {generatedAt} />{/if}
 
-  <div class="mt-3"><Warnings warnings={report.warnings} raw={report.raw_warnings} /></div>
+  <div class:no-print={tables}>
+    <PrintHeader {report} {generatedAt} />
 
-  {#each groups as g (g.kind === 'empty' ? `${g.from}-${g.to}` : g.month.month)}
-    {#if g.kind === 'month'}
-      <MonthCard month={g.month} printMode={app.printMode} />
-    {:else if g.kind === 'current'}
-      <p class="mt-6 flex flex-wrap items-baseline gap-x-3 border-t border-line pt-2 text-sm">
-        <span class="font-display text-lg">{fmtMonth(g.month.month)}</span>
-        <span class="badge badge-live">{m.month.status.inProgress}</span>
-        <span class="text-muted">{m.month.nothingToFile}</span>
-      </p>
-    {:else}
-      <p class="mt-6 border-t border-line pt-2 text-sm text-muted">
-        {g.from === g.to ? `${fmtMonth(g.from)}: ${m.month.nothingToFile}` : t(m.month.emptyRange, { from: fmtMonth(g.from), to: fmtMonth(g.to) })}
-      </p>
-    {/if}
-  {/each}
+    <div class="mt-3"><Warnings warnings={report.warnings} raw={report.raw_warnings} /></div>
 
-  <OpenLots positions={report.open_lots} asOf={generatedAt.slice(0, 10)} />
-  <ExcludedRows summary={report.import} />
-  <Notes notes={report.notes} />
+    {#each groups as g (g.kind === 'empty' ? `${g.from}-${g.to}` : g.month.month)}
+      {#if g.kind === 'month'}
+        <MonthCard month={g.month} printMode={app.printMode} />
+      {:else if g.kind === 'current'}
+        <p class="mt-6 flex flex-wrap items-baseline gap-x-3 border-t border-line pt-2 text-sm">
+          <span class="font-display text-lg">{fmtMonth(g.month.month)}</span>
+          <span class="badge badge-live">{m.month.status.inProgress}</span>
+          <span class="text-muted">{m.month.nothingToFile}</span>
+        </p>
+      {:else}
+        <p class="mt-6 border-t border-line pt-2 text-sm text-muted">
+          {g.from === g.to ? `${fmtMonth(g.from)}: ${m.month.nothingToFile}` : t(m.month.emptyRange, { from: fmtMonth(g.from), to: fmtMonth(g.to) })}
+        </p>
+      {/if}
+    {/each}
+
+    <OpenLots positions={report.open_lots} asOf={generatedAt.slice(0, 10)} />
+    <ExcludedRows summary={report.import} />
+    <Notes notes={report.notes} />
+  </div>
 </div>

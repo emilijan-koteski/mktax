@@ -47,3 +47,19 @@ export function fmtDateTime(iso: string): string {
 export const isNegative = (d: string): boolean => d.trim().startsWith('-');
 
 export const isZero = (d: string): boolean => /^-?0(\.0+)?$/.test(d.trim());
+
+export function sumDecimals(values: string[]): string {
+  const scale = Math.max(2, ...values.map((v) => v.trim().split('.')[1]?.length ?? 0));
+  let total = 0n;
+  for (const v of values) {
+    const s = v.trim();
+    if (!/^-?\d+(\.\d+)?$/.test(s)) continue;
+    const negative = s.startsWith('-');
+    const [int, frac = ''] = s.replace('-', '').split('.');
+    const n = BigInt(int + frac.padEnd(scale, '0'));
+    total += negative ? -n : n;
+  }
+  const negative = total < 0n;
+  const digits = (negative ? -total : total).toString().padStart(scale + 1, '0');
+  return `${negative ? '-' : ''}${digits.slice(0, -scale)}.${digits.slice(-scale)}`;
+}

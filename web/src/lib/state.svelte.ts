@@ -2,6 +2,8 @@ import { ApiError, fetchRates } from './api';
 import type { AppError, CalcOpts, CalculateResult, FileIn, ParseResult, RatesTable } from './types';
 import { engine, loadEngine } from './wasm';
 
+export type PrintLayout = 'cards' | 'tables';
+
 export type Phase = 'booting' | 'idle' | 'parsing' | 'parsed' | 'calculating' | 'report' | 'error';
 
 const paint = () => new Promise<void>((r) => setTimeout(r, 0));
@@ -22,6 +24,7 @@ class AppState {
   ratesProgress = $state({ done: 0, total: 0 });
   generatedAt = $state<string | null>(null);
   printMode = $state(false);
+  printLayout = $state<PrintLayout>('cards');
 
   opts = $derived<CalcOpts>({ from: this.period.from, to: this.period.to, fund_units: $state.snapshot(this.fundUnits) });
   stale = $derived(this.phase === 'report' && JSON.stringify(this.opts) !== JSON.stringify(this.reportOpts));

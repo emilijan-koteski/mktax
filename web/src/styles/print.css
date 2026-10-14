@@ -3,7 +3,15 @@
   margin: 14mm 12mm 16mm;
 }
 
+@page ledger {
+  size: A4 landscape;
+  margin: 10mm 8mm 12mm;
+}
+
 @media print {
+  body:has(.ledger-doc) {
+    page: ledger;
+  }
   html {
     background: #fff;
     color: #000;
