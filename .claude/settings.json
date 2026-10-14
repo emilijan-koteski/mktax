@@ -1,0 +1,21 @@
+{
+  "attribution": {
+    "commit": "",
+    "pr": "",
+    "sessionUrl": false
+  },
+  "includeCoAuthoredBy": false,
+  "hooks": {
+    "PostToolUse": [
+      {
+        "matcher": "Edit|Write|MultiEdit",
+        "hooks": [
+          {
+            "type": "command",
+            "command": "go build -o \"${TMPDIR:-/tmp}/mktax-checkcomments\" ./tools/checkcomments && \"${TMPDIR:-/tmp}/mktax-checkcomments\" -hook"
+          }
+        ]
+      }
+    ]
+  }
+}
