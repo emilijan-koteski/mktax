@@ -24,9 +24,9 @@
           <td data-label={m.instruments.isin} class="text-ink-muted tabular-nums">{ins.isin}</td>
           <td data-label={m.instruments.trades} class="num">{ins.buys} / {ins.sells}</td>
           <td data-label={m.instruments.fundUnits}>
-            <label class="inline-flex items-center gap-2">
+            <label class="flex min-w-0 items-center justify-end gap-2 sm:inline-flex sm:justify-start">
               <input type="checkbox" class="checkbox" aria-label="{m.instruments.fundUnits}: {ins.ticker}" bind:checked={fundUnits[ins.key]} />
-              {#if ins.fund_units_guessed}<span class="text-xs text-ink-muted">{m.instruments.guessed}</span>{/if}
+              {#if ins.fund_units_guessed}<span class="min-w-0 truncate text-xs text-ink-muted" title={m.instruments.guessed}>{m.instruments.guessed}</span>{/if}
             </label>
           </td>
         </tr>
