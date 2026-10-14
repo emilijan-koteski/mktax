@@ -1,0 +1,5070 @@
+{
+  "2024-01-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2024-01-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2024-01-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2024-01-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2024-01-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2024-01-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2024-01-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2024-01-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2024-01-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2024-01-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2024-01-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2024-01-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2024-01-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2024-01-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2024-01-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2024-01-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2024-01-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2024-01-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2024-01-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2024-01-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2024-01-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2024-01-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2024-01-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2024-01-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2024-01-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2024-01-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2024-01-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2024-01-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2024-01-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2024-01-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2024-01-31": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.31"
+    }
+  },
+  "2024-03-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2024-03-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2024-03-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2024-03-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2024-03-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2024-03-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2024-03-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2024-03-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2024-03-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2024-03-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2024-03-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2024-03-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2024-03-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2024-03-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2024-03-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2024-03-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2024-03-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2024-03-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2024-03-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2024-03-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2024-03-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2024-03-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2024-03-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2024-03-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2024-03-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2024-03-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2024-03-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2024-03-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2024-03-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2024-03-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2024-03-31": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.31"
+    }
+  },
+  "2024-06-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2024-06-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2024-06-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2024-06-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2024-06-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2024-06-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2024-06-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2024-06-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2024-06-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2024-06-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2024-06-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2024-06-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2024-06-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2024-06-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2024-06-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2024-06-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2024-06-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2024-06-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2024-06-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2024-06-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2024-06-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2024-06-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2024-06-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2024-06-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2024-06-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2024-06-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2024-06-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2024-06-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2024-06-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2024-06-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2024-11-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2024-11-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2024-11-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2024-11-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2024-11-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2024-11-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2024-11-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2024-11-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2024-11-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2024-11-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2024-11-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2024-11-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2024-11-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2024-11-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2024-11-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2024-11-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2024-11-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2024-11-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2024-11-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2024-11-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2024-11-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2024-11-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2024-11-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2024-11-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2024-11-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2024-11-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2024-11-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2024-11-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2024-11-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2024-11-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2025-02-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2025-02-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2025-02-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2025-02-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2025-02-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2025-02-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2025-02-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2025-02-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2025-02-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2025-02-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2025-02-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2025-02-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2025-02-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2025-02-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2025-02-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2025-02-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2025-02-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2025-02-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2025-02-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2025-02-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2025-02-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2025-02-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2025-02-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2025-02-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2025-02-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2025-02-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2025-02-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2025-02-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2025-05-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2025-05-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2025-05-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2025-05-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2025-05-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2025-05-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2025-05-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2025-05-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2025-05-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2025-05-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2025-05-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2025-05-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2025-05-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2025-05-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2025-05-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2025-05-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2025-05-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2025-05-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2025-05-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2025-05-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2025-05-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2025-05-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2025-05-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2025-05-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2025-05-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2025-05-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2025-05-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2025-05-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2025-05-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2025-05-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2025-05-31": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.31"
+    }
+  },
+  "2025-06-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2025-06-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2025-06-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2025-06-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2025-06-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2025-06-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2025-06-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2025-06-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2025-06-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2025-06-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2025-06-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2025-06-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2025-06-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2025-06-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2025-06-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2025-06-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2025-06-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2025-06-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2025-06-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2025-06-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2025-06-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2025-06-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2025-06-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2025-06-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2025-06-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2025-06-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2025-06-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2025-06-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2025-06-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2025-06-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2025-09-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2025-09-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2025-09-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2025-09-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2025-09-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2025-09-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2025-09-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2025-09-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2025-09-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2025-09-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2025-09-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2025-09-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2025-09-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2025-09-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2025-09-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2025-09-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2025-09-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2025-09-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2025-09-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2025-09-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2025-09-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2025-09-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2025-09-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2025-09-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2025-09-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2025-09-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2025-09-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2025-09-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2025-09-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2025-09-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2026-01-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2026-01-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2026-01-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2026-01-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2026-01-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2026-01-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2026-01-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2026-01-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2026-01-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2026-01-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2026-01-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2026-01-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2026-01-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2026-01-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2026-01-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2026-01-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2026-01-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2026-01-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2026-01-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2026-01-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2026-01-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2026-01-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2026-01-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2026-01-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2026-01-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2026-01-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2026-01-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2026-01-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2026-01-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2026-01-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2026-01-31": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.31"
+    }
+  },
+  "2026-02-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2026-02-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2026-02-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2026-02-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2026-02-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2026-02-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2026-02-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2026-02-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2026-02-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2026-02-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2026-02-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2026-02-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2026-02-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2026-02-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2026-02-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2026-02-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2026-02-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2026-02-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2026-02-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2026-02-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2026-02-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2026-02-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2026-02-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2026-02-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2026-02-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2026-02-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2026-02-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2026-02-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2026-03-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2026-03-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2026-03-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2026-03-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2026-03-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2026-03-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2026-03-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2026-03-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2026-03-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2026-03-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2026-03-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2026-03-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2026-03-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2026-03-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2026-03-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2026-03-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2026-03-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2026-03-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2026-03-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2026-03-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2026-03-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2026-03-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2026-03-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2026-03-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2026-03-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2026-03-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2026-03-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2026-03-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2026-03-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2026-03-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2026-03-31": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.31"
+    }
+  },
+  "2026-05-01": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.01"
+    }
+  },
+  "2026-05-02": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.02"
+    }
+  },
+  "2026-05-03": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.03"
+    }
+  },
+  "2026-05-04": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.04"
+    }
+  },
+  "2026-05-05": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.05"
+    }
+  },
+  "2026-05-06": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.06"
+    }
+  },
+  "2026-05-07": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.07"
+    }
+  },
+  "2026-05-08": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.08"
+    }
+  },
+  "2026-05-09": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.09"
+    }
+  },
+  "2026-05-10": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.1"
+    }
+  },
+  "2026-05-11": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.11"
+    }
+  },
+  "2026-05-12": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.12"
+    }
+  },
+  "2026-05-13": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.13"
+    }
+  },
+  "2026-05-14": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.14"
+    }
+  },
+  "2026-05-15": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.15"
+    }
+  },
+  "2026-05-16": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.16"
+    }
+  },
+  "2026-05-17": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.17"
+    }
+  },
+  "2026-05-18": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.18"
+    }
+  },
+  "2026-05-19": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.19"
+    }
+  },
+  "2026-05-20": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.2"
+    }
+  },
+  "2026-05-21": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.21"
+    }
+  },
+  "2026-05-22": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.22"
+    }
+  },
+  "2026-05-23": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.23"
+    }
+  },
+  "2026-05-24": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.24"
+    }
+  },
+  "2026-05-25": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.25"
+    }
+  },
+  "2026-05-26": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.26"
+    }
+  },
+  "2026-05-27": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.27"
+    }
+  },
+  "2026-05-28": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.28"
+    }
+  },
+  "2026-05-29": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.29"
+    }
+  },
+  "2026-05-30": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.3"
+    }
+  },
+  "2026-05-31": {
+    "EUR": {
+      "units": 1,
+      "middle": "61.5"
+    },
+    "GBP": {
+      "units": 1,
+      "middle": "70.25"
+    },
+    "USD": {
+      "units": 1,
+      "middle": "50.31"
+    }
+  }
+}

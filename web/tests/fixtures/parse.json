@@ -1,0 +1,329 @@
+{
+  "import": {
+    "account_currency": "EUR",
+    "first": "2024-01-10",
+    "last": "2026-05-20",
+    "counts": {
+      "trades": 10,
+      "dividends": 4
+    },
+    "files": [
+      {
+        "name": "2024.csv",
+        "rows": 8,
+        "trades": 3,
+        "dividends": 1,
+        "interest": 1,
+        "ignored": 3,
+        "duplicates": 0,
+        "unknown": 0,
+        "first": "2024-01-05",
+        "last": "2024-12-30",
+        "columns": [
+          "Action",
+          "Time (UTC)",
+          "ISIN",
+          "Ticker",
+          "Name",
+          "Notes",
+          "ID",
+          "No. of shares",
+          "Price / share",
+          "Currency (Price / share)",
+          "Exchange rate",
+          "Result",
+          "Currency (Result)",
+          "Total",
+          "Currency (Total)",
+          "Withholding tax",
+          "Currency (Withholding tax)",
+          "Currency conversion from amount",
+          "Currency (Currency conversion from amount)",
+          "Currency conversion to amount",
+          "Currency (Currency conversion to amount)",
+          "Currency conversion fee",
+          "Currency (Currency conversion fee)"
+        ]
+      },
+      {
+        "name": "2025.csv",
+        "rows": 7,
+        "trades": 3,
+        "dividends": 1,
+        "interest": 1,
+        "ignored": 1,
+        "duplicates": 0,
+        "unknown": 0,
+        "first": "2025-02-14",
+        "last": "2025-12-01",
+        "columns": [
+          "Action",
+          "Time (UTC)",
+          "ISIN",
+          "Ticker",
+          "Name",
+          "Notes",
+          "ID",
+          "No. of shares",
+          "Price / share",
+          "Currency (Price / share)",
+          "Exchange rate",
+          "Result",
+          "Currency (Result)",
+          "Total",
+          "Currency (Total)",
+          "Withholding tax",
+          "Currency (Withholding tax)",
+          "Currency conversion from amount",
+          "Currency (Currency conversion from amount)",
+          "Currency conversion to amount",
+          "Currency (Currency conversion to amount)",
+          "Currency conversion fee",
+          "Currency (Currency conversion fee)"
+        ]
+      },
+      {
+        "name": "2026.csv",
+        "rows": 11,
+        "trades": 4,
+        "dividends": 2,
+        "interest": 1,
+        "ignored": 1,
+        "duplicates": 1,
+        "unknown": 1,
+        "first": "2025-09-09",
+        "last": "2026-05-20",
+        "columns": [
+          "Action",
+          "Time (UTC)",
+          "ISIN",
+          "Ticker",
+          "Name",
+          "Notes",
+          "ID",
+          "No. of shares",
+          "Price / share",
+          "Currency (Price / share)",
+          "Exchange rate",
+          "Result",
+          "Currency (Result)",
+          "Total",
+          "Currency (Total)",
+          "Withholding tax",
+          "Currency (Withholding tax)",
+          "Charge amount",
+          "Currency (Charge amount)",
+          "Deposit fee",
+          "Currency (Deposit fee)",
+          "Currency conversion fee",
+          "Currency (Currency conversion fee)"
+        ]
+      }
+    ],
+    "instruments": [
+      {
+        "key": "GB0000000003",
+        "ticker": "TEST_GB_EQ",
+        "isin": "GB0000000003",
+        "name": "Test British plc",
+        "currency": "GBP",
+        "fund_units": false,
+        "fund_units_guessed": true,
+        "buys": 1,
+        "sells": 1,
+        "dividends": 1
+      },
+      {
+        "key": "IE0000000002",
+        "ticker": "TEST_IE_ETF",
+        "isin": "IE0000000002",
+        "name": "Test Global UCITS ETF",
+        "currency": "EUR",
+        "fund_units": true,
+        "fund_units_guessed": true,
+        "buys": 2,
+        "sells": 1,
+        "dividends": 0
+      },
+      {
+        "key": "US0000000001",
+        "ticker": "TEST_US_EQ",
+        "isin": "US0000000001",
+        "name": "Test US Equity Inc",
+        "currency": "USD",
+        "fund_units": false,
+        "fund_units_guessed": true,
+        "buys": 2,
+        "sells": 3,
+        "dividends": 3
+      }
+    ],
+    "interest": [
+      {
+        "file": "2024.csv",
+        "line": 7,
+        "id": "I2024-0001",
+        "action": "Interest on cash",
+        "date": "2024-07-01",
+        "time": "2024-07-01T06:00:00Z",
+        "ticker": "",
+        "isin": "",
+        "name": "",
+        "amount": "0.42",
+        "currency": "EUR",
+        "notes": "",
+        "kind": "interest"
+      },
+      {
+        "file": "2025.csv",
+        "line": 8,
+        "id": "I2025-0001",
+        "action": "Interest on cash",
+        "date": "2025-12-01",
+        "time": "2025-12-01T06:00:00Z",
+        "ticker": "",
+        "isin": "",
+        "name": "",
+        "amount": "0.55",
+        "currency": "EUR",
+        "notes": "",
+        "kind": "interest"
+      },
+      {
+        "file": "2026.csv",
+        "line": 9,
+        "id": "L2026-0001",
+        "action": "Lending interest",
+        "date": "2026-04-15",
+        "time": "2026-04-15T06:00:00Z",
+        "ticker": "",
+        "isin": "",
+        "name": "",
+        "amount": "0.10",
+        "currency": "EUR",
+        "notes": "",
+        "kind": "interest"
+      }
+    ],
+    "excluded": [
+      {
+        "file": "2025.csv",
+        "line": 5,
+        "id": "V2025-0002",
+        "action": "Dividend (Return of capital)",
+        "date": "2025-08-01",
+        "time": "2025-08-01T12:00:00Z",
+        "ticker": "TEST_IE_ETF",
+        "isin": "IE0000000002",
+        "name": "Test Global UCITS ETF",
+        "amount": "1.00",
+        "currency": "EUR",
+        "notes": "",
+        "kind": "dividend_excluded"
+      }
+    ],
+    "ignored": {
+      "Currency conversion": 1,
+      "Deposit": 3,
+      "Withdrawal": 1
+    },
+    "unknown": {
+      "Mystery action": 1
+    },
+    "flags": [
+      {
+        "code": "free_shares",
+        "params": {
+          "action": "Deposit",
+          "file": "2024.csv",
+          "id": "D2024-0002",
+          "line": "3"
+        }
+      },
+      {
+        "code": "gross_estimated",
+        "params": {
+          "action": "Dividend (Dividend)",
+          "file": "2024.csv",
+          "id": "V2024-0001",
+          "line": "6",
+          "ticker": "TEST_US_EQ"
+        }
+      },
+      {
+        "code": "gross_estimated",
+        "params": {
+          "action": "Dividend (Ordinary)",
+          "file": "2025.csv",
+          "id": "V2025-0001",
+          "line": "4",
+          "ticker": "TEST_US_EQ"
+        }
+      },
+      {
+        "code": "excluded_dividend_type",
+        "params": {
+          "action": "Dividend (Return of capital)",
+          "file": "2025.csv",
+          "id": "V2025-0002",
+          "line": "5",
+          "ticker": "TEST_IE_ETF",
+          "type": "Return of capital"
+        }
+      },
+      {
+        "code": "corporate_action",
+        "params": {
+          "action": "Stock split",
+          "file": "2026.csv",
+          "id": "S2026-0001",
+          "line": "6",
+          "ticker": "TEST_GB_EQ"
+        }
+      },
+      {
+        "code": "unrecognised_action",
+        "params": {
+          "action": "Mystery action",
+          "file": "2026.csv",
+          "id": "M2026-0001",
+          "line": "10"
+        }
+      },
+      {
+        "code": "gross_estimated",
+        "params": {
+          "action": "Dividend (Dividends paid by us corporations)",
+          "file": "2026.csv",
+          "id": "V2026-0002",
+          "line": "12",
+          "ticker": "TEST_US_EQ"
+        }
+      }
+    ]
+  },
+  "rates_needed": {
+    "months": [
+      "2024-01",
+      "2024-03",
+      "2024-06",
+      "2024-11",
+      "2025-02",
+      "2025-05",
+      "2025-06",
+      "2025-09",
+      "2026-01",
+      "2026-02",
+      "2026-03",
+      "2026-05"
+    ],
+    "currencies": [
+      "EUR",
+      "USD"
+    ]
+  },
+  "suggested_period": {
+    "from": "2024-01",
+    "to": "2026-10"
+  }
+}
