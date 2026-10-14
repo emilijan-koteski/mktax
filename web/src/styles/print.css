@@ -1,0 +1,47 @@
+@page {
+  size: A4;
+  margin: 14mm 12mm 16mm;
+}
+
+@media print {
+  html {
+    background: #fff;
+    color: #000;
+    font-size: 10pt;
+  }
+  .no-print {
+    display: none !important;
+  }
+  .print-only {
+    display: block !important;
+  }
+  .sheet {
+    break-before: page;
+    border-top-width: 2px;
+    padding: 0;
+  }
+  .sheet:first-of-type {
+    break-before: auto;
+  }
+  thead {
+    display: table-header-group;
+  }
+  tr,
+  dl {
+    break-inside: avoid;
+  }
+  h2,
+  h3 {
+    break-after: avoid;
+  }
+  a[href]::after {
+    content: none;
+  }
+  details > summary {
+    list-style: none;
+  }
+  .stamp,
+  .badge {
+    print-color-adjust: exact;
+  }
+}

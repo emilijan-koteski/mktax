@@ -1,10 +1,117 @@
 @import "tailwindcss";
 
 @theme {
-  --color-ink: #1f2933;
-  --color-muted: #6b7280;
-  --color-line: #e5e7eb;
-  --color-accent: #1d4ed8;
-  --color-danger: #b91c1c;
-  --color-warn: #b45309;
+  --color-paper: #f4f6f8;
+  --color-sheet: #ffffff;
+  --color-ink: #10223a;
+  --color-muted: #5b6b7c;
+  --color-line: #d5dbe3;
+  --color-accent: #0b5f8a;
+  --color-accent-soft: #e3eef5;
+  --color-stamp: #b3261e;
+  --color-stamp-soft: #fbe9e7;
+  --color-amber: #8a5a00;
+  --color-amber-soft: #fff4d6;
+  --color-ok: #1b6e4b;
+  --font-display: Georgia, "Noto Serif", "DejaVu Serif", "Times New Roman", serif;
+  --font-sans: system-ui, "Segoe UI", Roboto, "Noto Sans", "Helvetica Neue", Arial, sans-serif;
+}
+
+@layer base {
+  html {
+    background: var(--color-paper);
+    color: var(--color-ink);
+    font-family: var(--font-sans);
+    font-size: 15px;
+    line-height: 1.5;
+  }
+  body {
+    margin: 0;
+  }
+  h1,
+  h2,
+  h3 {
+    font-family: var(--font-display);
+    font-weight: 600;
+    letter-spacing: -0.01em;
+    line-height: 1.2;
+  }
+  table {
+    border-collapse: collapse;
+  }
+  .num {
+    font-variant-numeric: tabular-nums;
+    text-align: right;
+    white-space: nowrap;
+  }
+  :focus-visible {
+    outline: 2px solid var(--color-accent);
+    outline-offset: 2px;
+  }
+  @media (prefers-reduced-motion: reduce) {
+    *,
+    *::before,
+    *::after {
+      transition: none !important;
+      animation: none !important;
+    }
+  }
+}
+
+@layer components {
+  .btn {
+    @apply inline-flex cursor-pointer items-center gap-2 rounded-xs border border-ink bg-ink px-3 py-1.5 text-sm font-medium text-white hover:border-accent hover:bg-accent disabled:cursor-not-allowed disabled:opacity-50;
+  }
+  .btn-secondary {
+    @apply border-line bg-sheet text-ink hover:border-accent hover:bg-accent-soft hover:text-ink;
+  }
+  .ledger {
+    @apply w-full text-sm;
+  }
+  .ledger th {
+    @apply border-b-2 border-ink py-1.5 pr-3 text-left align-bottom font-medium text-muted;
+  }
+  .ledger td {
+    @apply border-b border-line py-1.5 pr-3 align-top;
+  }
+  .ledger tbody th {
+    @apply border-b border-line py-1.5 pr-3 text-left align-top font-semibold text-ink;
+  }
+  .ledger tr:last-child td,
+  .ledger tr:last-child th {
+    @apply border-b-0;
+  }
+  .sheet {
+    @apply border-t-4 border-ink bg-sheet px-4 py-4;
+  }
+  .stamp {
+    @apply inline-block rounded-xs border-2 border-stamp px-2 py-0.5 text-xs font-bold tracking-wide text-stamp;
+    transform: rotate(-3deg);
+  }
+  .badge {
+    @apply inline-block rounded-xs border border-line px-2 py-0.5 text-xs font-medium text-muted;
+  }
+  .badge-live {
+    @apply border-accent bg-accent-soft text-accent;
+  }
+  .callout {
+    @apply border-l-4 px-3 py-2 text-sm;
+  }
+  .callout-warn {
+    @apply border-amber bg-amber-soft;
+  }
+  .callout-error {
+    @apply border-stamp bg-stamp-soft;
+  }
+  .callout-info {
+    @apply border-accent bg-accent-soft;
+  }
+  .visually-hidden {
+    @apply absolute h-px w-px overflow-hidden whitespace-nowrap;
+    clip: rect(0 0 0 0);
+    clip-path: inset(50%);
+  }
+  .print-only {
+    display: none;
+  }
 }
