@@ -25,7 +25,7 @@ describe('App flow', () => {
     await userEvent.click(screen.getByRole('button', { name: 'Пресметај' }));
     await waitFor(() => expect(screen.getByRole('status')).toHaveTextContent(/Извештајот е подготвен/));
     expect(screen.getByRole('region', { name: /јануари 2026/ })).toBeInTheDocument();
-    expect(screen.getByRole('button', { name: /Преземи CSV/ })).toBeInTheDocument();
+    expect(screen.getByRole('button', { name: /Зачувај CSV/ })).toBeInTheDocument();
     expect(screen.getByText(/Не е даночен совет/)).toBeInTheDocument();
   });
 });

@@ -2,7 +2,7 @@
   import { downloadText, portalRowsCsv } from '../lib/export/csv';
   import { fmtMonth } from '../lib/format';
   import { m, t } from '../lib/i18n';
-  import { printReport } from '../lib/print';
+  import { printTables } from '../lib/print';
   import { app } from '../lib/state.svelte';
   import type { CalculateResult, Month } from '../lib/types';
   import ExcludedRows from './ExcludedRows.svelte';
@@ -43,8 +43,7 @@
 
 <div>
   <div class="no-print flex flex-wrap items-center gap-2">
-    <button type="button" class="btn" onclick={() => printReport(printTitle, 'tables')}>{m.ledger.button}</button>
-    <button type="button" class="btn btn-secondary" onclick={() => printReport(printTitle)}>{m.print.button}</button>
+    <button type="button" class="btn" onclick={() => printTables(printTitle)}>{m.ledger.button}</button>
     <button type="button" class="btn btn-secondary" onclick={exportCsv}>{m.csv.download}</button>
   </div>
 

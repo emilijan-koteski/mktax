@@ -1,10 +1,10 @@
 import { tick } from 'svelte';
-import { app, type PrintLayout } from './state.svelte';
+import { app } from './state.svelte';
 
-export async function printReport(title: string, layout: PrintLayout = 'cards'): Promise<void> {
+export async function printTables(title: string): Promise<void> {
   const previous = document.title;
   document.title = title;
-  app.printLayout = layout;
+  app.printLayout = 'tables';
   app.printMode = true;
   await tick();
   window.print();
