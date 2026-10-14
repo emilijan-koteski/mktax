@@ -7,5 +7,7 @@ web/public/mktax.wasm
 web/public/mktax.wasm.gz
 web/public/wasm_exec.js
 .claude/settings.local.json
+.superpowers/
+.playwright-mcp/
 .env
 .env.*
