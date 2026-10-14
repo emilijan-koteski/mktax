@@ -1,0 +1,12 @@
+Action,Time (UTC),ISIN,Ticker,Name,Notes,ID,No. of shares,Price / share,Currency (Price / share),Exchange rate,Result,Currency (Result),Total,Currency (Total),Withholding tax,Currency (Withholding tax),Charge amount,Currency (Charge amount),Deposit fee,Currency (Deposit fee),Currency conversion fee,Currency (Currency conversion fee)
+Market sell,2025-09-09 09:30:00+00:00,IE0000000002,TEST_IE_ETF,Test Global UCITS ETF,,T2025-0003,5,90.00,EUR,1.00000,50.00,EUR,450.00,EUR,,,,,,,,
+Market sell,2026-01-15 14:00:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,T2026-0001,8,140.00,USD,1.06700,230.00,EUR,1050.00,EUR,,,,,,,1.58,EUR
+Market sell,2026-02-10 11:00:00+00:00,GB0000000003,TEST_GB_EQ,Test British plc,,T2026-0002,20,300.00,GBX,0.85700,12.00,EUR,70.00,EUR,,,,,,,0.11,EUR
+Dividend (Dividend),2026-03-03 12:00:00+00:00,GB0000000003,TEST_GB_EQ,Test British plc,,V2026-0001,20,5.00,GBX,0.86000,,,1.15,EUR,,,,,,,,
+Stock split,2026-03-10 07:00:00+00:00,GB0000000003,TEST_GB_EQ,Test British plc,,S2026-0001,,,,,,,,,,,,,,,,
+Stop sell,2026-03-20 16:00:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,T2026-0003,10,150.00,USD,1.08700,300.00,EUR,1380.00,EUR,,,,,,,2.07,EUR
+Deposit,2026-04-01 09:00:00+00:00,,,,,D2026-0001,,,,,,,500.00,EUR,,,2.50,EUR,2.50,EUR,,
+Lending interest,2026-04-15 06:00:00+00:00,,,,,L2026-0001,,,,,,,0.10,EUR,,,,,,,,
+Mystery action,2026-04-16 06:00:00+00:00,,,,,M2026-0001,,,,,,,0.00,EUR,,,,,,,,
+Market buy,2026-05-05 10:00:00+00:00,IE0000000002,TEST_IE_ETF,Test Global UCITS ETF,,T2026-0004,3,95.00,EUR,1.00000,,,285.00,EUR,,,,,,,,
+Dividend (Dividends paid by us corporations),2026-05-20 12:00:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,V2026-0002,4,1.00,USD,1.17600,,,3.40,EUR,0.60,USD,,,,,,

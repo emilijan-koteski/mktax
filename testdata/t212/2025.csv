@@ -1,0 +1,8 @@
+Action,Time (UTC),ISIN,Ticker,Name,Notes,ID,No. of shares,Price / share,Currency (Price / share),Exchange rate,Result,Currency (Result),Total,Currency (Total),Withholding tax,Currency (Withholding tax),Currency conversion from amount,Currency (Currency conversion from amount),Currency conversion to amount,Currency (Currency conversion to amount),Currency conversion fee,Currency (Currency conversion fee)
+Market sell,2025-02-14 15:00:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,T2025-0001,4,130.00,USD,1.08300,80.00,EUR,480.00,EUR,,,,,,,0.72,EUR
+Limit buy,2025-05-10 13:20:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,AutoInvest,T2025-0002,6,120.00,USD,1.09100,,,660.00,EUR,,,,,,,0.99,EUR
+Dividend (Ordinary),2025-06-20 12:00:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,V2025-0001,12,0.90,USD,1.12500,,,9.60,EUR,1.80,USD,,,,,,
+Dividend (Return of capital),2025-08-01 12:00:00+00:00,IE0000000002,TEST_IE_ETF,Test Global UCITS ETF,,V2025-0002,5,0.20,EUR,1.00000,,,1.00,EUR,,,,,,,,
+Market sell,2025-09-09 09:30:00+00:00,IE0000000002,TEST_IE_ETF,Test Global UCITS ETF,,T2025-0003,5,90.00,EUR,1.00000,50.00,EUR,450.00,EUR,,,,,,,,
+Withdrawal,2025-10-05 10:00:00+00:00,,,,,W2025-0001,,,,,,,300.00,EUR,,,,,,,,
+Interest on cash,2025-12-01 06:00:00+00:00,,,,,I2025-0001,,,,,,,0.55,EUR,,,,,,,,

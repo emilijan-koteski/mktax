@@ -1,0 +1,9 @@
+Action,Time (UTC),ISIN,Ticker,Name,Notes,ID,No. of shares,Price / share,Currency (Price / share),Exchange rate,Result,Currency (Result),Total,Currency (Total),Withholding tax,Currency (Withholding tax),Currency conversion from amount,Currency (Currency conversion from amount),Currency conversion to amount,Currency (Currency conversion to amount),Currency conversion fee,Currency (Currency conversion fee)
+Deposit,2024-01-05 09:00:00+00:00,,,,,D2024-0001,,,,,,,1000.00,EUR,,,,,,,,
+Deposit,2024-01-06 09:00:00+00:00,,,,Free Shares Promotion,D2024-0002,,,,,,,0.00,EUR,,,,,,,,
+Market buy,2024-01-10 14:30:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,T2024-0001,10,100.00,USD,1.08700,,,920.00,EUR,,,,,,,1.38,EUR
+Market buy,2024-03-15 10:15:00+00:00,IE0000000002,TEST_IE_ETF,Test Global UCITS ETF,,T2024-0002,5,80.00,EUR,1.00000,,,400.00,EUR,,,,,,,,
+Dividend (Dividend),2024-06-20 12:00:00+00:00,US0000000001,TEST_US_EQ,Test US Equity Inc,,V2024-0001,10,0.85,USD,1.07600,,,7.90,EUR,1.50,USD,,,,,,
+Interest on cash,2024-07-01 06:00:00+00:00,,,,,I2024-0001,,,,,,,0.42,EUR,,,,,,,,
+Market buy,2024-11-02 15:45:00+00:00,GB0000000003,TEST_GB_EQ,Test British plc,,T2024-0003,20,250.00,GBX,0.86200,,,58.00,EUR,,,,,,,0.09,EUR
+Currency conversion,2024-12-30 08:00:00+00:00,,,,,C2024-0001,,,,1.04000,,,200.00,EUR,,,200.00,EUR,208.00,USD,0.30,EUR
