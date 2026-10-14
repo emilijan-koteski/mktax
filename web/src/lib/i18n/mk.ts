@@ -8,6 +8,15 @@ export const mk = {
     privacy: 'Приватност',
     version: 'верзија {version}',
   },
+  theme: {
+    toDark: 'Вклучи темна тема',
+    toLight: 'Вклучи светла тема',
+  },
+  footer: {
+    madeBy: 'Изработил',
+    hobby: 'Хоби проект, секогаш можете да ме',
+    coffee: 'почастите кафе',
+  },
   status: {
     booting: 'Се вчитува пресметувачот…',
     idle: 'Подготвено. Додадете CSV извоз од Trading 212.',

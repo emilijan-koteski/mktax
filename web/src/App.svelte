@@ -5,6 +5,7 @@
   import ShieldCheck from '@lucide/svelte/icons/shield-check';
   import { onMount } from 'svelte';
   import { version } from '../package.json';
+  import coffee from './assets/bmc-cup.gif';
   import logo from './assets/danocko-logo.png';
   import Callout from './components/Callout.svelte';
   import Disclaimer from './components/Disclaimer.svelte';
@@ -18,6 +19,7 @@
   import StatusLine from './components/StatusLine.svelte';
   import StepHeading from './components/StepHeading.svelte';
   import Stepper, { type StepState } from './components/Stepper.svelte';
+  import ThemeToggle from './components/ThemeToggle.svelte';
   import { m, t } from './lib/i18n';
   import { app } from './lib/state.svelte';
   import { errorText } from './lib/warnings';
@@ -55,17 +57,18 @@
 </script>
 
 <header class="no-print sticky top-0 z-20 border-b border-line bg-surface">
-  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-3 px-4 sm:px-6">
-    <a href="#top" class="flex min-w-0 items-center gap-3 text-ink no-underline">
+  <div class="mx-auto flex h-16 max-w-6xl items-center justify-between gap-2 px-4 sm:gap-3 sm:px-6">
+    <a href="#top" class="flex min-w-0 items-center gap-2 text-ink no-underline sm:gap-3">
       <img src={logo} alt="" width="40" height="40" class="size-9 shrink-0 sm:size-10" />
       <div class="min-w-0">
         <h1 class="text-xl leading-6 font-bold tracking-tight">{m.app.title}</h1>
         <p class="hidden truncate text-xs text-ink-muted sm:block">{m.app.subtitle}</p>
       </div>
     </a>
-    <nav class="flex items-center gap-1">
-      <a href="#help" class="btn btn-ghost btn-sm" onclick={() => reveal('help')}><CircleHelp class="hidden sm:block" />{m.app.help}</a>
-      <a href="#privacy" class="btn btn-ghost btn-sm" onclick={() => reveal('privacy')}><ShieldCheck class="hidden sm:block" />{m.app.privacy}</a>
+    <nav class="flex shrink-0 items-center sm:gap-1">
+      <a href="#help" class="btn btn-ghost btn-sm px-2 sm:px-3" onclick={() => reveal('help')}><CircleHelp class="hidden sm:block" />{m.app.help}</a>
+      <a href="#privacy" class="btn btn-ghost btn-sm px-2 sm:px-3" onclick={() => reveal('privacy')}><ShieldCheck class="hidden sm:block" />{m.app.privacy}</a>
+      <ThemeToggle />
     </nav>
   </div>
 </header>
@@ -140,8 +143,15 @@
       <Help />
       <Privacy />
     </div>
-    <p class="flex items-center justify-center gap-2 text-xs text-ink-muted">
-      <img src={logo} alt="" width="20" height="20" class="size-5" />{m.app.title} · {t(m.app.version, { version })}
-    </p>
+    <div class="space-y-1.5 text-center text-xs text-ink-muted">
+      <p class="flex items-center justify-center gap-2">
+        <img src={logo} alt="" width="20" height="20" class="size-5" />{m.app.title} · {t(m.app.version, { version })}
+      </p>
+      <p>{m.footer.madeBy} <a href="mailto:emilijankoteski@pm.me" title="emilijankoteski@pm.me">Emilijan Koteski</a></p>
+      <p>
+        {m.footer.hobby} <a href="https://buymeacoffee.com/emilijan" target="_blank" rel="noopener noreferrer">{m.footer.coffee}</a>.
+        <img src={coffee} alt="" aria-hidden="true" width="18" height="18" class="inline-block size-[1.35em] align-[-0.3em]" />
+      </p>
+    </div>
   </footer>
 </div>

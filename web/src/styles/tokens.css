@@ -46,8 +46,8 @@
   --control-height-sm: 32px;
 }
 
-@media screen and (prefers-color-scheme: dark) {
-  :root {
+@media screen {
+  :root[data-theme="dark"] {
     color-scheme: dark;
     --page: #0e1b19;
     --surface: #142422;
