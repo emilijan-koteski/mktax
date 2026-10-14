@@ -217,3 +217,27 @@ func TestImportSummaryFromFixture(t *testing.T) {
 		t.Fatalf("range = %s..%s", s.First, s.Last)
 	}
 }
+
+func TestDividendForeignTaxFromImport(t *testing.T) {
+	div := mktax.Dividend{Ticker: "TEST_US_EQ", ISIN: "US0000000001", Name: "Test", Type: "Dividend", PaidOn: at("2026-05-20T12:00:00Z"), Gross: d("10"), GrossCurrency: "USD", Net: d("7.9"), NetCurrency: "EUR"}
+	r := compute(t, nil, []mktax.Dividend{div}, "2026-05", "2026-05", flat(map[string]string{"USD": "50", "EUR": "61.5"}))
+	imp := t212csv.Import{DividendDetails: map[string]t212csv.DividendDetail{
+		t212csv.DividendKey(div): {Ref: "V1", File: "2026.csv", Line: 12, Withholding: d("1.50"), WithholdingCurrency: "USD", GrossEstimated: true},
+	}}
+	out := New(r, imp, now)
+	m := out.Months[0]
+	dv := m.Dividends[0]
+	if dv.ForeignTax != "1.50" || dv.ForeignTaxCurrency != "USD" || m.PortalRows[0].ForeignTax != "1.50" {
+		t.Fatalf("foreign tax = %s %s / row %s", dv.ForeignTax, dv.ForeignTaxCurrency, m.PortalRows[0].ForeignTax)
+	}
+	if len(dv.Warnings) != 1 || dv.Warnings[0].Code != "gross_estimated" || dv.Warnings[0].Params["line"] != "12" || dv.Warnings[0].Params["file"] != "2026.csv" {
+		t.Fatalf("warnings = %+v", dv.Warnings)
+	}
+	if len(m.Warnings) != 0 {
+		t.Fatalf("gross_estimated must not be a month-level alarm: %+v", m.Warnings)
+	}
+	fallback := New(r, t212csv.Import{}, now).Months[0].Dividends[0]
+	if fallback.ForeignTax != "0.28" {
+		t.Fatalf("fallback = %s", fallback.ForeignTax)
+	}
+}

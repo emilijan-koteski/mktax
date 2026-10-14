@@ -26,5 +26,8 @@ describe('ImportSummary', () => {
     expect(screen.getByText(/3 камати/)).toBeInTheDocument();
     expect(screen.getByText(/бесплатни акции/)).toBeInTheDocument();
     expect(screen.getByText(/Mystery action/)).toBeInTheDocument();
+    const estimated = screen.getAllByText(/проценета/);
+    expect(estimated).toHaveLength(1);
+    expect(estimated[0]).toHaveTextContent(/вкупно 3/);
   });
 });

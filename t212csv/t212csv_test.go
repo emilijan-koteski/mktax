@@ -328,3 +328,26 @@ func TestFixtureFilesParse(t *testing.T) {
 		t.Fatalf("sells = %d", sells)
 	}
 }
+
+func TestDividendDetailsCarryTheWithholding(t *testing.T) {
+	imp := mustParse(t, csvA(divRow("Dividend (Dividend)", "V1", "2026-06-20 12:00:00+00:00", "US0000000001", "T", "N", "10", "0.85", "USD", "7.90", "EUR", "1.50", "USD")))
+	if len(imp.Dividends) != 1 {
+		t.Fatalf("dividends = %+v", imp.Dividends)
+	}
+	d, ok := imp.DividendDetails[DividendKey(imp.Dividends[0])]
+	if !ok || d.Withholding.String() != "1.5" || d.WithholdingCurrency != "USD" || !d.GrossEstimated || d.GrossUnknown || d.Ref != "V1" || d.File != "a.csv" || d.Line != 2 {
+		t.Fatalf("detail = %+v ok = %v", d, ok)
+	}
+	imp = mustParse(t, csvA(divRow("Dividend (Dividend)", "V2", "2026-06-20 12:00:00+00:00", "GB0000000003", "T", "N", "10", "5.00", "GBX", "1.15", "EUR", "", "")))
+	d = imp.DividendDetails[DividendKey(imp.Dividends[0])]
+	if d.WithholdingCurrency != "" || !d.Withholding.IsZero() || d.GrossEstimated {
+		t.Fatalf("no withholding: %+v", d)
+	}
+}
+
+func TestZeroAmountDividendSkipped(t *testing.T) {
+	imp := mustParse(t, csvA(divRow("Dividend (Dividend)", "V1", "2026-06-20 12:00:00+00:00", "US0000000001", "T", "N", "0.001", "0.90", "USD", "0.00", "EUR", "", "")))
+	if len(imp.Dividends) != 0 || len(imp.Flags) != 1 || imp.Flags[0].Code != "zero_amount" {
+		t.Fatalf("dividends = %+v flags = %+v", imp.Dividends, imp.Flags)
+	}
+}

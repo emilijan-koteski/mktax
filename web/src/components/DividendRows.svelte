@@ -4,6 +4,8 @@
   import type { Dividend } from '../lib/types';
 
   let { dividends }: { dividends: Dividend[] } = $props();
+  const estimated = (d: Dividend) => d.warnings.some((w) => w.code === 'gross_estimated');
+  const anyEstimated = $derived(dividends.some(estimated));
 </script>
 
 <section class="mt-3">
@@ -28,7 +30,10 @@
           <tr>
             <th scope="row">{d.ticker} <span class="block text-xs font-normal text-muted">{d.type}</span></th>
             <td>{fmtDate(d.date)}</td>
-            <td class="num">{fmtAmount(d.gross, d.gross_currency)}</td>
+            <td class="num">
+              {#if estimated(d)}<span title={m.dividends.estimated}>≈</span>{/if}
+              {fmtAmount(d.gross, d.gross_currency)}
+            </td>
             <td class="num">{fmtAmount(d.net, d.net_currency)}</td>
             <td class="num">{fmtAmount(d.foreign_tax, d.foreign_tax_currency)}</td>
             <td class="num">{d.gross_rate}</td>
@@ -40,4 +45,5 @@
       </tbody>
     </table>
   </div>
+  {#if anyEstimated}<p class="mt-1 text-xs text-muted">≈ {m.dividends.estimated}</p>{/if}
 </section>

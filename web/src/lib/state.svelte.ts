@@ -19,7 +19,6 @@ class AppState {
   period = $state({ from: '', to: '' });
   report = $state.raw<CalculateResult | null>(null);
   reportOpts = $state.raw<CalcOpts | null>(null);
-  ratesMissing = $state.raw<{ month: string; days: string[] }[]>([]);
   ratesProgress = $state({ done: 0, total: 0 });
   generatedAt = $state<string | null>(null);
   printMode = $state(false);
@@ -74,7 +73,6 @@ class AppState {
     const opts = this.opts;
     this.phase = 'calculating';
     this.error = null;
-    this.ratesMissing = [];
     await paint();
     try {
       const need = this.importInfo.rates_needed;
@@ -85,7 +83,6 @@ class AppState {
           onProgress: (done, total) => (this.ratesProgress = { done, total }),
         });
         rates = fetched.days;
-        this.ratesMissing = fetched.missing;
       }
       const now = new Date().toISOString();
       const res = engine.calculate({ files: this.files, rates, from: opts.from, to: opts.to, fund_units: opts.fund_units, now });

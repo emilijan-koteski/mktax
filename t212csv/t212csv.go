@@ -88,9 +88,20 @@ type FileSummary struct {
 	Columns    []string
 }
 
+type DividendDetail struct {
+	Ref                 string
+	File                string
+	Line                int
+	Withholding         decimal.Decimal
+	WithholdingCurrency string
+	GrossEstimated      bool
+	GrossUnknown        bool
+}
+
 type Import struct {
 	Trades          []mktax.Trade
 	Dividends       []mktax.Dividend
+	DividendDetails map[string]DividendDetail
 	Excluded        []Row
 	Interest        []Row
 	Ignored         map[string]int
@@ -192,7 +203,7 @@ type parser struct {
 func Parse(files []File, opts Options) (Import, error) {
 	p := &parser{
 		opts:        opts,
-		imp:         Import{Ignored: map[string]int{}, Unknown: map[string]int{}},
+		imp:         Import{Ignored: map[string]int{}, Unknown: map[string]int{}, DividendDetails: map[string]DividendDetail{}},
 		seen:        map[string]bool{},
 		instruments: map[string]*Instrument{},
 		currencies:  map[string]int{},
@@ -413,26 +424,40 @@ func (p *parser) dividend(r record, when time.Time, id, dtype string) error {
 		return r.fail("Withholding tax", err)
 	}
 	wht, wccy := majorUnits(wht.Abs(), r.get(colWHTCy))
+	if total.IsZero() {
+		p.flag("zero_amount", r, r.get(colAction), nil)
+		return nil
+	}
+	detail := DividendDetail{Ref: id, File: r.file, Line: r.line}
 	gross, gccy := total.Abs(), tccy
 	switch {
 	case !hasWHT || wht.IsZero():
 	case wccy == tccy:
 		gross = total.Abs().Add(wht)
+		detail.Withholding, detail.WithholdingCurrency = wht, wccy
 	case wccy == pccy && hasPrice && hasQty:
 		gross, gccy = price.Mul(qty.Abs()).Add(wht), pccy
+		detail.Withholding, detail.WithholdingCurrency, detail.GrossEstimated = wht, wccy, true
 		p.flag("gross_estimated", r, r.get(colAction), nil)
 	default:
 		gross, gccy = decimal.Zero, ""
+		detail.Withholding, detail.WithholdingCurrency, detail.GrossUnknown = wht, wccy, true
 		p.flag("gross_unknown", r, r.get(colAction), map[string]string{"withholding_currency": wccy})
 	}
 	ins := p.instrument(r)
 	ins.Dividends++
 	p.currencies[tccy]++
-	p.imp.Dividends = append(p.imp.Dividends, mktax.Dividend{
+	dv := mktax.Dividend{
 		Ticker: ins.Ticker, ISIN: ins.ISIN, Name: ins.Name, Type: dtype, PaidOn: when,
 		Gross: gross, GrossCurrency: gccy, Net: total.Abs(), NetCurrency: tccy,
-	})
+	}
+	p.imp.Dividends = append(p.imp.Dividends, dv)
+	p.imp.DividendDetails[DividendKey(dv)] = detail
 	return nil
+}
+
+func DividendKey(d mktax.Dividend) string {
+	return strings.Join([]string{d.Ticker, d.ISIN, d.PaidOn.UTC().Format(time.RFC3339Nano), d.Type, d.Net.String(), d.NetCurrency}, "|")
 }
 
 func (p *parser) listed(r record, action string, when time.Time, id string, kind Kind) Row {

@@ -8,6 +8,7 @@ import reportGolden from '../fixtures/report.json';
 const months = (reportGolden as CalculateResult).report.months;
 const jan = months.find((m) => m.month === '2026-01')!;
 const oct = months.find((m) => m.month === '2026-10')!;
+const may = months.find((m) => m.month === '2026-05')!;
 
 describe('MonthCard', () => {
   it('shows the deadlines, the tax summary and the details on demand', async () => {
@@ -18,6 +19,12 @@ describe('MonthCard', () => {
     await userEvent.click(screen.getByRole('button', { name: /детали/i }));
     expect(screen.getByText(/Лотови \(FIFO\)/)).toBeInTheDocument();
     expect(screen.getByText(/ослободено \(над 2 години\)/)).toBeInTheDocument();
+  });
+
+  it('marks an estimated gross dividend in the dividend table', () => {
+    render(MonthCard, { month: may, printMode: true });
+    expect(screen.getByTitle(/проценет/)).toHaveTextContent('≈');
+    expect(screen.getByText(/0,60 USD/)).toBeInTheDocument();
   });
 
   it('forces the details open in print mode and labels the current month', () => {

@@ -33,6 +33,11 @@ describe('ReportView', () => {
     expect(within(jan).getByText(/Пријава до 10\.02\.2026/)).toBeInTheDocument();
   });
 
+  it('never claims the report could not be computed because of unpublished future days', () => {
+    render(ReportView, { result, generatedAt: '2026-10-14T12:00:00Z' });
+    expect(screen.queryByText(/нема објавено курс/)).not.toBeInTheDocument();
+  });
+
   it('marks a sale with unknown cost and lists open lots and excluded rows', () => {
     render(ReportView, { result, generatedAt: '2026-10-14T12:00:00Z' });
     const mar = screen.getByRole('region', { name: /март 2026/ });

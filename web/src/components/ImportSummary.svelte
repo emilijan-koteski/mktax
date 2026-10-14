@@ -8,6 +8,14 @@
   let { info, onremove }: { info: ParseResult; onremove: (name: string) => void } = $props();
   const imp = $derived(info.import);
   const ignoredTotal = $derived(Object.values(imp.ignored).reduce((a, b) => a + b, 0));
+  const grouped = $derived.by(() => {
+    const byCode: Record<string, { text: string; n: number }> = {};
+    for (const w of imp.flags) {
+      if (byCode[w.code]) byCode[w.code].n += 1;
+      else byCode[w.code] = { text: warningText(w), n: 1 };
+    }
+    return Object.values(byCode).map((g) => (g.n > 1 ? t(m.warnings.grouped, { text: g.text, n: g.n }) : g.text));
+  });
 </script>
 
 <ul class="divide-y divide-line border-y border-line">
@@ -33,8 +41,8 @@
   <div class="mt-3">
     <Callout kind="warn">
       <ul class="list-disc space-y-1 pl-5">
-        {#each imp.flags as w, i (i)}
-          <li>{warningText(w)}</li>
+        {#each grouped as line (line)}
+          <li>{line}</li>
         {/each}
       </ul>
     </Callout>

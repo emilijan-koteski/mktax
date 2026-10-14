@@ -267,7 +267,7 @@ func New(r mktax.Report, imp t212csv.Import, now time.Time) Report {
 		Notes: strs(r.Notes), Warnings: []Warning{}, RawWarnings: strs(r.Warnings), Import: ImportSummary(imp),
 	}
 	for _, m := range r.Months {
-		out.Months = append(out.Months, newMonth(m))
+		out.Months = append(out.Months, newMonth(m, imp.DividendDetails))
 	}
 	for _, p := range r.OpenLots {
 		out.OpenLots = append(out.OpenLots, newOpenPosition(p))
@@ -275,7 +275,7 @@ func New(r mktax.Report, imp t212csv.Import, now time.Time) Report {
 	return out
 }
 
-func newMonth(m mktax.MonthReport) Month {
+func newMonth(m mktax.MonthReport, details map[string]t212csv.DividendDetail) Month {
 	out := Month{
 		Month: month(m.Month), FileBy: date(m.FileBy), PayBy: date(m.PayBy),
 		HasEntries: m.HasEntries, Overdue: m.Overdue, InProgress: m.InProgress,
@@ -289,9 +289,13 @@ func newMonth(m mktax.MonthReport) Month {
 		out.PortalRows = append(out.PortalRows, saleRow(sale))
 	}
 	for _, l := range m.Dividends {
-		dv := newDividend(l)
+		dv := newDividend(l, details[t212csv.DividendKey(l.Dividend)])
 		out.Dividends = append(out.Dividends, dv)
-		out.Warnings = append(out.Warnings, dv.Warnings...)
+		for _, w := range dv.Warnings {
+			if w.Code != "gross_estimated" {
+				out.Warnings = append(out.Warnings, w)
+			}
+		}
 		out.PortalRows = append(out.PortalRows, dividendRow(dv))
 	}
 	slices.SortStableFunc(out.PortalRows, func(a, b PortalRow) int { return strings.Compare(a.Date, b.Date) })
@@ -359,7 +363,8 @@ func newLot(l mktax.LotMatch) Lot {
 	}
 }
 
-func newDividend(l mktax.DividendLine) Dividend {
+// Shapes one dividend line; the foreign tax typed into the portal comes from the broker's own withholding figure when its currency matches the gross, and is derived from the MKD figures otherwise.
+func newDividend(l mktax.DividendLine, detail t212csv.DividendDetail) Dividend {
 	out := Dividend{
 		Ticker: l.Ticker, ISIN: l.ISIN, Name: l.Name, Type: l.Type, Date: date(l.Date), Time: ts(l.PaidOn),
 		IncomeType: l.IncomeType, IncomeSubtype: l.IncomeSubtype, Country: country(l.Country),
@@ -370,11 +375,20 @@ func newDividend(l mktax.DividendLine) Dividend {
 		Warnings: []Warning{},
 	}
 	out.ForeignTax = money(decimal.Zero)
-	if l.GrossRate.IsPositive() {
+	switch {
+	case detail.WithholdingCurrency != "" && detail.WithholdingCurrency == l.GrossCurrency:
+		out.ForeignTax = money(detail.Withholding)
+	case l.GrossRate.IsPositive():
 		out.ForeignTax = money(l.WithheldMKD.Div(l.GrossRate))
 	}
 	if len(l.Warnings) > 0 {
 		out.Warnings = append(out.Warnings, warn("gross_from_net", "ticker", l.Ticker, "date", out.Date))
+	}
+	if detail.GrossEstimated {
+		out.Warnings = append(out.Warnings, warn("gross_estimated", "ticker", l.Ticker, "date", out.Date, "file", detail.File, "line", fmt.Sprint(detail.Line)))
+	}
+	if detail.GrossUnknown {
+		out.Warnings = append(out.Warnings, warn("gross_unknown", "ticker", l.Ticker, "date", out.Date, "file", detail.File, "line", fmt.Sprint(detail.Line), "withholding_currency", detail.WithholdingCurrency))
 	}
 	return out
 }

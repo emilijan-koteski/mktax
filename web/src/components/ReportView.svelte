@@ -5,7 +5,6 @@
   import { printReport } from '../lib/print';
   import { app } from '../lib/state.svelte';
   import type { CalculateResult, Month } from '../lib/types';
-  import Callout from './Callout.svelte';
   import ExcludedRows from './ExcludedRows.svelte';
   import MonthCard from './MonthCard.svelte';
   import Notes from './Notes.svelte';
@@ -32,7 +31,6 @@
     return out;
   });
 
-  const missingDays = $derived(app.ratesMissing.reduce((n, mm) => n + mm.days.length, 0));
   const csvName = $derived(t(m.csv.filename, { from: report.from, to: report.to }));
 
   function exportCsv() {
@@ -48,9 +46,6 @@
 
   <PrintHeader {report} {generatedAt} />
 
-  {#if missingDays > 0}
-    <div class="mt-3"><Callout kind="warn">{t(m.warnings.ratesMissingDays, { n: missingDays })}</Callout></div>
-  {/if}
   <div class="mt-3"><Warnings warnings={report.warnings} raw={report.raw_warnings} /></div>
 
   {#each groups as g (g.kind === 'empty' ? `${g.from}-${g.to}` : g.month.month)}

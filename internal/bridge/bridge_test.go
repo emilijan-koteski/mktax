@@ -209,7 +209,15 @@ func TestCalculateMatchesHandBuiltInputs(t *testing.T) {
 	if err != nil {
 		t.Fatal(err)
 	}
-	want := report.New(r, t212csv.Import{AccountCurrency: "EUR"}, now)
+	var files []t212csv.File
+	for _, f := range fixtureFiles(t) {
+		files = append(files, t212csv.File{Name: f.Name, Data: []byte(f.Data)})
+	}
+	imp, err := t212csv.Parse(files, t212csv.Options{})
+	if err != nil {
+		t.Fatal(err)
+	}
+	want := report.New(r, t212csv.Import{AccountCurrency: "EUR", DividendDetails: imp.DividendDetails}, now)
 	if !reflect.DeepEqual(want.Months, out.Report.Months) || !reflect.DeepEqual(want.OpenLots, out.Report.OpenLots) || !reflect.DeepEqual(want.RawWarnings, out.Report.RawWarnings) {
 		t.Fatal("the CSV path and hand-built engine inputs produce different reports")
 	}

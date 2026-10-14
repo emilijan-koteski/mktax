@@ -517,7 +517,7 @@
             "gross_currency": "USD",
             "net": "7.90",
             "net_currency": "EUR",
-            "foreign_tax": "0.32",
+            "foreign_tax": "1.50",
             "foreign_tax_currency": "USD",
             "gross_rate": "50.2",
             "net_rate": "61.5",
@@ -526,7 +526,17 @@
             "withheld_mkd": "16.15",
             "tax_if_credit_accepted_mkd": "34.05",
             "tax_if_credit_rejected_mkd": "50.20",
-            "warnings": []
+            "warnings": [
+              {
+                "code": "gross_estimated",
+                "params": {
+                  "date": "2024-06-20",
+                  "file": "2024.csv",
+                  "line": "6",
+                  "ticker": "TEST_US_EQ"
+                }
+              }
+            ]
           }
         ],
         "totals": {
@@ -570,7 +580,7 @@
             },
             "currency": "USD",
             "gross": "10.00",
-            "foreign_tax": "0.32",
+            "foreign_tax": "1.50",
             "enter": true,
             "skip_reason": "",
             "gross_mkd": "502.00",
@@ -1085,7 +1095,7 @@
             "gross_currency": "USD",
             "net": "9.60",
             "net_currency": "EUR",
-            "foreign_tax": "0.84",
+            "foreign_tax": "1.80",
             "foreign_tax_currency": "USD",
             "gross_rate": "50.2",
             "net_rate": "61.5",
@@ -1094,7 +1104,17 @@
             "withheld_mkd": "42.12",
             "tax_if_credit_accepted_mkd": "21.13",
             "tax_if_credit_rejected_mkd": "63.25",
-            "warnings": []
+            "warnings": [
+              {
+                "code": "gross_estimated",
+                "params": {
+                  "date": "2025-06-20",
+                  "file": "2025.csv",
+                  "line": "4",
+                  "ticker": "TEST_US_EQ"
+                }
+              }
+            ]
           }
         ],
         "totals": {
@@ -1138,7 +1158,7 @@
             },
             "currency": "USD",
             "gross": "12.60",
-            "foreign_tax": "0.84",
+            "foreign_tax": "1.80",
             "enter": true,
             "skip_reason": "",
             "gross_mkd": "632.52",
@@ -1964,7 +1984,7 @@
             "gross_currency": "USD",
             "net": "3.40",
             "net_currency": "EUR",
-            "foreign_tax": "0.43",
+            "foreign_tax": "0.60",
             "foreign_tax_currency": "USD",
             "gross_rate": "50.2",
             "net_rate": "61.5",
@@ -1973,7 +1993,17 @@
             "withheld_mkd": "21.82",
             "tax_if_credit_accepted_mkd": "1.27",
             "tax_if_credit_rejected_mkd": "23.09",
-            "warnings": []
+            "warnings": [
+              {
+                "code": "gross_estimated",
+                "params": {
+                  "date": "2026-05-20",
+                  "file": "2026.csv",
+                  "line": "12",
+                  "ticker": "TEST_US_EQ"
+                }
+              }
+            ]
           }
         ],
         "totals": {
@@ -2017,7 +2047,7 @@
             },
             "currency": "USD",
             "gross": "4.60",
-            "foreign_tax": "0.43",
+            "foreign_tax": "0.60",
             "enter": true,
             "skip_reason": "",
             "gross_mkd": "230.92",
