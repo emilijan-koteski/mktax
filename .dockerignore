@@ -1,0 +1,10 @@
+.git
+.claude
+.superpowers
+bin
+web/node_modules
+web/dist
+web/public/mktax.wasm
+web/public/mktax.wasm.gz
+web/public/wasm_exec.js
+cmd/server/static/*
