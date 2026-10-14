@@ -30,7 +30,14 @@ class AppState {
   stale = $derived(this.phase === 'report' && JSON.stringify(this.opts) !== JSON.stringify(this.reportOpts));
   canCalculate = $derived((this.phase === 'parsed' || this.phase === 'report') && this.files.length > 0);
 
-  async boot(): Promise<void> {
+  private ready: Promise<void> = Promise.resolve();
+
+  boot(): Promise<void> {
+    this.ready = this.load();
+    return this.ready;
+  }
+
+  private async load(): Promise<void> {
     try {
       await loadEngine();
       this.phase = 'idle';
@@ -44,6 +51,8 @@ class AppState {
     const byName: Record<string, FileIn> = Object.fromEntries(this.files.map((f) => [f.name, f]));
     for (const f of incoming) byName[f.name] = f;
     this.files = Object.values(byName);
+    await this.ready;
+    if (this.error?.code === 'engineLoad') return;
     await this.parse();
   }
 

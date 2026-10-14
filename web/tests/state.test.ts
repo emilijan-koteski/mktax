@@ -25,6 +25,7 @@ describe('app state', () => {
     vi.setSystemTime(new Date('2026-10-14T12:00:00Z'));
   });
   afterEach(() => {
+    vi.doUnmock('../src/lib/wasm');
     vi.useRealTimers();
     vi.unstubAllGlobals();
   });
@@ -34,6 +35,22 @@ describe('app state', () => {
     expect(app.phase).toBe('booting');
     await app.boot();
     expect(app.phase).toBe('idle');
+  });
+
+  it('parses files added while the engine is still loading once it is ready', async () => {
+    let release!: () => void;
+    const gate = new Promise<void>((r) => (release = r));
+    vi.doMock('../src/lib/wasm', async (load) => ({ ...(await load<typeof import('../src/lib/wasm')>()), loadEngine: () => gate }));
+    const app = await freshApp();
+    const booting = app.boot();
+    const adding = app.addFiles([csvFile()]);
+    await new Promise((r) => setTimeout(r, 0));
+    expect(app.phase).toBe('booting');
+    release();
+    await booting;
+    await adding;
+    expect(app.phase).toBe('parsed');
+    expect(app.error).toBeNull();
   });
 
   it('parses added files and seeds the options from the import', async () => {

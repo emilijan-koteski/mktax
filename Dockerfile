@@ -4,8 +4,8 @@ WORKDIR /src
 COPY go.mod go.sum ./
 RUN go mod download
 COPY . .
-ARG VERSION=dev
-RUN GOOS=js GOARCH=wasm go build -trimpath -ldflags="-s -w -X github.com/emilijan-koteski/mktax/internal/buildinfo.Version=${VERSION}" -o /out/mktax.wasm ./cmd/wasm \
+RUN VERSION=$(sed -n 's/^  "version": "\(.*\)",$/\1/p' web/package.json) && test -n "$VERSION" \
+ && GOOS=js GOARCH=wasm go build -trimpath -ldflags="-s -w -X github.com/emilijan-koteski/mktax/internal/buildinfo.Version=${VERSION}" -o /out/mktax.wasm ./cmd/wasm \
  && cp "$(go env GOROOT)/lib/wasm/wasm_exec.js" /out/wasm_exec.js
 
 FROM node:24-bookworm-slim AS web
@@ -24,8 +24,8 @@ RUN go mod download
 COPY . .
 COPY --from=web /src/web/dist/ cmd/server/static/
 RUN gzip -9 -c cmd/server/static/mktax.wasm > cmd/server/static/mktax.wasm.gz
-ARG VERSION=dev
-RUN CGO_ENABLED=0 go build -trimpath -ldflags="-s -w -X github.com/emilijan-koteski/mktax/internal/buildinfo.Version=${VERSION}" -o /out/mktax ./cmd/server
+RUN VERSION=$(sed -n 's/^  "version": "\(.*\)",$/\1/p' web/package.json) && test -n "$VERSION" \
+ && CGO_ENABLED=0 go build -trimpath -ldflags="-s -w -X github.com/emilijan-koteski/mktax/internal/buildinfo.Version=${VERSION}" -o /out/mktax ./cmd/server
 
 FROM gcr.io/distroless/static-debian12:nonroot
 COPY --from=server /out/mktax /mktax

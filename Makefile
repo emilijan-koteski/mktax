@@ -1,7 +1,7 @@
 GO ?= go
 GOROOT := $(shell $(GO) env GOROOT)
 MODULE := github.com/emilijan-koteski/mktax
-VERSION ?= $(shell git describe --tags --always --dirty 2>/dev/null || echo dev)
+VERSION := $(shell sed -n 's/^  "version": "\(.*\)",$$/\1/p' web/package.json)
 LDFLAGS := -s -w -X $(MODULE)/internal/buildinfo.Version=$(VERSION)
 STATIC := cmd/server/static
 WASM_PKGS := ./mktax/... ./rates/... ./t212csv/... ./internal/report/... ./internal/bridge/... ./cmd/wasm/...
@@ -54,7 +54,7 @@ lint:
 	pnpm -C web lint
 
 docker:
-	docker build --build-arg VERSION=$(VERSION) -t mktax:$(VERSION) -t mktax:latest .
+	docker build -t mktax:$(VERSION) -t mktax:latest .
 
 clean:
 	rm -rf bin web/dist web/public/mktax.wasm web/public/mktax.wasm.gz web/public/wasm_exec.js $(STATIC)/*
