@@ -3,7 +3,9 @@ package nbrm
 import (
 	"context"
 	"encoding/json"
+	"errors"
 	"fmt"
+	"net/http"
 	"net/url"
 	"strings"
 	"time"
@@ -45,9 +47,13 @@ type rawRate struct {
 	Sreden json.Number `json:"sreden"`
 }
 
+// NBRM answers 404 when no day in the range has a published rate list yet, so that case is an empty table rather than an error.
 func (c *Client) Rates(ctx context.Context, from, to time.Time) (rates.Table, error) {
 	q := url.Values{"StartDate": {from.Format(queryLayout)}, "EndDate": {to.Format(queryLayout)}, "format": {"json"}}
 	b, err := c.h.Get(ctx, ratesPath, q)
+	if apiErr := (*httpx.APIError)(nil); errors.As(err, &apiErr) && apiErr.StatusCode == http.StatusNotFound {
+		return rates.Table{}, nil
+	}
 	if err != nil {
 		return nil, err
 	}

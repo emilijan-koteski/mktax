@@ -115,6 +115,10 @@ func synthServer(t *testing.T, lastPublished string) *synth {
 				map[string]any{"datum": datum, "oznaka": "USD", "nomin": 1, "sreden": json.Number("50." + d.Format("02"))},
 				map[string]any{"datum": datum, "oznaka": "EUR", "nomin": 1, "sreden": json.Number("61.5")})
 		}
+		if len(rows) == 0 {
+			http.Error(w, `{"title":"Not Found","status":404}`, http.StatusNotFound)
+			return
+		}
 		_ = json.NewEncoder(w).Encode(rows)
 	}))
 	t.Cleanup(s.srv.Close)
@@ -196,7 +200,9 @@ func TestStoreUnpublishedDay(t *testing.T) {
 	if err == nil || !strings.Contains(err.Error(), "not published") {
 		t.Errorf("unpublished day err = %v", err)
 	}
-	_ = s.Prefetch(context.Background(), []time.Time{day("2026-05-12")})
+	if err := s.Prefetch(context.Background(), []time.Time{day("2026-05-12")}); err != nil {
+		t.Fatalf("prefetch of only unpublished days: %v", err)
+	}
 	if srv.calls.Load() != 2 {
 		t.Errorf("calls = %d, want 2", srv.calls.Load())
 	}
