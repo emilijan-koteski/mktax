@@ -1,0 +1,11 @@
+bin/
+cmd/server/static/*
+!cmd/server/static/.gitkeep
+web/node_modules/
+web/dist/
+web/public/mktax.wasm
+web/public/mktax.wasm.gz
+web/public/wasm_exec.js
+.claude/settings.local.json
+.env
+.env.*
