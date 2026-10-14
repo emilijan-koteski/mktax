@@ -1,0 +1,8 @@
+[
+ {"rBr":101,"datum":"2026-05-01T00:00:00","valuta":"840","oznaka":"USD","drzava":"С А Д","nomin":1,"sreden":50.1234,"drzavaAng":"USA","drzavaAl":"SHBA","nazivMak":"САД долар","nazivAng":"US dollar","nazivAl":"Dollari Amerikan","datum_f":"2026-04-30T00:00:00"},
+ {"rBr":101,"datum":"2026-05-01T00:00:00","valuta":"978","oznaka":"EUR","drzava":"ЕМУ","nomin":1,"sreden":60.5,"drzavaAng":"EMU","drzavaAl":"UEM","nazivMak":"евро","nazivAng":"Euro","nazivAl":"Euro","datum_f":"2026-04-30T00:00:00"},
+ {"rBr":101,"datum":"2026-05-01T00:00:00","valuta":"392","oznaka":"JPY","drzava":"Јапонија","nomin":100,"sreden":35.25,"drzavaAng":"Japan","drzavaAl":"Japonia","nazivMak":"јапонски јен","nazivAng":"Japanese yen","nazivAl":"Jeni Japonez","datum_f":"2026-04-30T00:00:00"},
+ {"rBr":101,"datum":"2026-05-02T00:00:00","valuta":"840","oznaka":"USD","drzava":"С А Д","nomin":1,"sreden":50.1234,"drzavaAng":"USA","drzavaAl":"SHBA","nazivMak":"САД долар","nazivAng":"US dollar","nazivAl":"Dollari Amerikan","datum_f":"2026-04-30T00:00:00"},
+ {"rBr":101,"datum":"2026-05-02T00:00:00","valuta":"978","oznaka":"EUR","drzava":"ЕМУ","nomin":1,"sreden":60.5,"drzavaAng":"EMU","drzavaAl":"UEM","nazivMak":"евро","nazivAng":"Euro","nazivAl":"Euro","datum_f":"2026-04-30T00:00:00"},
+ {"rBr":101,"datum":"2026-05-02T00:00:00","valuta":"392","oznaka":"JPY","drzava":"Јапонија","nomin":100,"sreden":35.25,"drzavaAng":"Japan","drzavaAl":"Japonia","nazivMak":"јапонски јен","nazivAng":"Japanese yen","nazivAl":"Jeni Japonez","datum_f":"2026-04-30T00:00:00"}
+]
